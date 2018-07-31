@@ -1,5 +1,3 @@
-#!/usr/bin/python3
-
 from flask import Flask, request, jsonify
 from ortools.constraint_solver import pywrapcp
 from ortools.constraint_solver import routing_enums_pb2
@@ -8,9 +6,8 @@ from gmaps import DistanceMatrix
 import json
 
 app = Flask(__name__)
-port = 5000 # port number for this application
 
-@app.route('/api', methods=['GET', 'POST'])
+@app.route('/api', methods=['POST'])
 def api():
 
 	input = request.json
@@ -80,8 +77,4 @@ def json_response(locations, max_distance, n_vehicles, n_locations):
 if __name__ == "__main__":
 
 	# start the flask server
-	app.run(
-		debug=True,
-		host='0.0.0.0',
-		port=port
-	)
+	app.run(debug=False)

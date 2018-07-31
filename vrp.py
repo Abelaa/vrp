@@ -1,5 +1,4 @@
-#!/usr/bin/python3
-"""Vehicle Routing Problem"""
+# Vehicle Routing Problem
 from __future__ import print_function
 from six.moves import xrange
 from gmaps import DistanceMatrix

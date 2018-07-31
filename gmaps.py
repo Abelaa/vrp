@@ -1,8 +1,8 @@
-#!/usr/bin/python3
 import googlemaps
 
-# fetch distance matrix from google and returns 2D matrix
+# fetches distance matrix from google and returns 2D array
 # Input: list of all locations including origin
+# both origin and destination locations have the same list of locations
 # api_key: contains the google maps api key
 class DistanceMatrix():
 
@@ -18,6 +18,7 @@ class DistanceMatrix():
 		gmaps = googlemaps.Client(key=self.api_key)
 		print("fetching matrix...")
 
+		# fetch distance matrix for driving b/n given points in meter
 		distance_matrix = gmaps.distance_matrix(
 			mode='driving',
 			units='metric',
@@ -36,6 +37,8 @@ class DistanceMatrix():
 		rows = json_data['rows']
 		num_rows = len(rows)
 		num_cols = len(rows[0]['elements'])
+
+		# initialize matrix with zeroes
 		distance_matrix = [[0 for x in range(num_cols)] for y in range(num_rows)]
 
 		for i in range(num_rows):
