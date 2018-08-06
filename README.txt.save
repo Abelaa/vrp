@@ -1,6 +1,6 @@
 
-requirements.txt contains the python dependencies required for this project. 
-They can be installed using the command "sudo pip install -r requirements.txt"
+requirements.txt contains the python dependencies incase
+they have to be reinstalled again using pip
 
 start_server.bash script can be used to start the server
 
