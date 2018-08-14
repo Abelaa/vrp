@@ -3,7 +3,8 @@
 
 2. Install uwsgi, server software for production, "sudo apt install uwsgi"
 
-configuration.sh script contains server configurations, mainly port
+configuration.sh script contains server configurations,
+mainly port and Google maps API KEY
 
 start_server.bash script can be used to start the server
 

@@ -1,4 +1,5 @@
 import googlemaps
+import os
 
 # fetches distance matrix from google and returns 2D array
 # Input: list of all locations including origin
@@ -8,7 +9,7 @@ class DistanceMatrix():
 
 	def __init__(self, origin_locations, destination_locations):
 
-		self.api_key = 'AIzaSyC02c5shSIY_kVIdXfCVZAZN6MJm5BJ2Ck'
+		self.api_key = os.getenv('API_KEY', 'AIzaSyC02c5shSIY_kVIdXfCVZAZN6MJm5BJ2Ck')
 		self.origin_locations = origin_locations
 		self.destination_locations = destination_locations
 
