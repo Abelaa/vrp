@@ -32,7 +32,7 @@ input =
 		"7.056614,38.458647"
 	],
 	"maximum_distance": 2190000,
-	"number_of_vehicles": 2,
+	"number_of_vehicles": 2
 }
 
 // sample distance matrix with real world data

@@ -46,4 +46,8 @@ class DistanceMatrix():
 			for j in range(num_cols):
 				distance_matrix[i][j] = json_data['rows'][i]['elements'][j]['distance']['value']
 
-		return distance_matrix
+		print('************************************')
+		print(json_data)
+		print('************************************')
+
+		return (distance_matrix, json_data)

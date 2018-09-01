@@ -9,12 +9,23 @@ def application(env, start_response):
 	except:
 		request_body_size = 0
 
+	response = {}
+
 	if env['REQUEST_URI'] == '/api':
 
 		if env['REQUEST_METHOD'] == "POST" and env.get("CONTENT_TYPE", "application/json"):
-			request_body = env['wsgi.input'].read(request_body_size)
-			data = json.loads(request_body.decode())
-			response = VRPService(data).get_response()
+
+			try:
+				request_body = env['wsgi.input'].read(request_body_size)
+				data = json.loads(request_body.decode())
+				response = VRPService(data).get_response()
+
+			except:
+				response = {
+					"status": "JSON_PARSE_ERROR",
+					"message": "The data sent is not a proper json format."
+				}
+			
 		else:
 			response = {
 				"status": "METHOD_NOT_ALLOWED",
