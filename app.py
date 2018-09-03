@@ -42,9 +42,6 @@ class VRPService:
 			).get_matrix()
 		# Exception thrown if googlemaps api is unable to fetch from google
 		except:
-			print('-------------------')
-			print(raw_json_data)
-			print('-------------------')
 			return {
 				"status" : "CRITICAL_ERROR",
 				"message" : "failed to get critical data" 

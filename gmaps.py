@@ -1,5 +1,6 @@
 import googlemaps
 import os
+import urllib.request, json 
 
 # fetches distance matrix from google and returns 2D array
 # Input: list of all locations including origin
@@ -45,9 +46,5 @@ class DistanceMatrix():
 		for i in range(num_rows):
 			for j in range(num_cols):
 				distance_matrix[i][j] = json_data['rows'][i]['elements'][j]['distance']['value']
-
-		print('************************************')
-		print(json_data)
-		print('************************************')
-
+		
 		return (distance_matrix, json_data)
