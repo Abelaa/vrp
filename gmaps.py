@@ -49,7 +49,13 @@ class DistanceMatrix():
 
 			for i in range(num_rows):
 				for j in range(num_cols):
-					distance_matrix[i][j] = json_data['rows'][i]['elements'][j]['distance']['value']
+					data = json_data['rows'][i]['elements'][j]
+					if data['status'] == 'NOT_FOUND':
+						return ('NOT_OKAY', {
+							"status": "INVALID_LOCATION_DATA",
+							"message": "At least one of the locations doesn't have proper format"
+						})
+					distance_matrix[i][j] = data['distance']['value']
 		
 			return ('OK', distance_matrix)
 

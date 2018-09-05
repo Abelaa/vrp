@@ -1,5 +1,5 @@
 
-1. Install python3 if on centos linux
+1. Install python3 on centos linux
 
 	yum install centos-release-scl
 	yum install rh-python36
@@ -11,13 +11,16 @@
 2. Install uwsgi, server software for production, 
 
 	pip install uwsgi
-	sudo apt install uwsgi # on ubuntu
 
 configuration.sh script contains server configurations,
 mainly port and Google maps API KEY
 
-start_server.bash script can be used to start the server
+first enable python3 on centos linux
 
-stop_server.bash script can be used to stop the server
+	scl enable rh-python36 bash
 
-cd into the scripts folder before running them
+Then you can use the following commands
+
+	start_server.bash script can be used to start the server
+	stop_server.bash script can be used to stop the server
+
