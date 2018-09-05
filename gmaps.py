@@ -37,15 +37,25 @@ class DistanceMatrix():
 	def get_matrix(self):
 
 		json_data = self.get_json_response()
-		rows = json_data['rows']
-		num_rows = len(rows)
-		num_cols = len(rows[0]['elements'])
 
-		# initialize matrix with zeroes
-		distance_matrix = [[0 for x in range(num_cols)] for y in range(num_rows)]
+		if json_data['status'] == 'OK':
 
-		for i in range(num_rows):
-			for j in range(num_cols):
-				distance_matrix[i][j] = json_data['rows'][i]['elements'][j]['distance']['value']
+			rows = json_data['rows']
+			num_rows = len(rows)
+			num_cols = len(rows[0]['elements'])
+
+			# initialize matrix with zeroes
+			distance_matrix = [[0 for x in range(num_cols)] for y in range(num_rows)]
+
+			for i in range(num_rows):
+				for j in range(num_cols):
+					distance_matrix[i][j] = json_data['rows'][i]['elements'][j]['distance']['value']
 		
-		return (distance_matrix, json_data)
+			return ('OK', distance_matrix)
+
+		else:
+
+			return ('NOT_OKAY', {
+				"status": json_data['status'],
+				"message": json_data['error_message']
+			})

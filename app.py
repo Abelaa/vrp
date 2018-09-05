@@ -33,19 +33,19 @@ class VRPService:
 		return self.response
 
 	def json_response(self, locations, max_distance, n_vehicles, n_locations):
+
 		# Instantiate DistanceMatrix
 		raw_json_data = {}
-		try:
-			distance_matrix, raw_json_data = DistanceMatrix(
-				locations, 
-				locations.copy()
-			).get_matrix()
-		# Exception thrown if googlemaps api is unable to fetch from google
-		except:
-			return {
-				"status" : "CRITICAL_ERROR",
-				"message" : "failed to get critical data" 
-			}
+
+		status, result = DistanceMatrix(
+			locations, 
+			locations.copy()
+		).get_matrix()
+
+		if status != 'OK':
+			return result
+
+		distance_matrix = result
 
 	    # Instantiate the data problem.
 		data = DataProblem(distance_matrix, max_distance, n_vehicles, n_locations)

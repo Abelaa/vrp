@@ -190,3 +190,169 @@ done.
 solving...
 Done.
 [pid: 32084|app: 0|req: 11/16] 197.156.95.201 () {30 vars in 361 bytes} [Tue Sep  4 14:09:24 2018] POST /api => generated 170 bytes in 259 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 1)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Wed Sep  5 11:12:53 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-28) on 31 August 2018 10:58:00
+os: Linux-3.10.0-862.el7.x86_64 #1 SMP Fri Apr 20 16:44:24 UTC 2018
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/atlas/vrp/VehicleRoutingRESTService
+detected binary path: /opt/rh/rh-python36/root/usr/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 15031
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:7000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.3 (default, Mar 20 2018, 13:50:41)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)]
+Python main interpreter initialized at 0x2073a20
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 250032 bytes (244 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+Traceback (most recent call last):
+  File "wsgi.py", line 2, in <module>
+    from app import VRPService
+  File "./app.py", line 45
+    if status not 'OK':
+                     ^
+SyntaxError: invalid syntax
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5623)
+spawned uWSGI worker 1 (pid: 5624, cores: 2)
+spawned uWSGI worker 2 (pid: 5625, cores: 2)
+writing pidfile to pid_list.txt
+writing pidfile to pid_list.txt
+writing pidfile to pid_list.txt
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Wed Sep  5 11:15:37 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-28) on 31 August 2018 10:58:00
+os: Linux-3.10.0-862.el7.x86_64 #1 SMP Fri Apr 20 16:44:24 UTC 2018
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/atlas/vrp/VehicleRoutingRESTService
+detected binary path: /opt/rh/rh-python36/root/usr/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 15031
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:7000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.3 (default, Mar 20 2018, 13:50:41)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)]
+Python main interpreter initialized at 0x1b21a20
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 250032 bytes (244 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x1b21a20 pid: 5634 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5634)
+spawned uWSGI worker 1 (pid: 5636, cores: 2)
+writing pidfile to pid_list.txt
+spawned uWSGI worker 2 (pid: 5637, cores: 2)
+writing pidfile to pid_list.txt
+writing pidfile to pid_list.txt
+[pid: 5637|app: 0|req: 1/1] 127.0.0.1 () {24 vars in 263 bytes} [Wed Sep  5 11:18:25 2018] GET / => generated 49 bytes in 1 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 0)
+[pid: 5637|app: 0|req: 2/2] 127.0.0.1 () {24 vars in 269 bytes} [Wed Sep  5 11:18:28 2018] GET /api => generated 94 bytes in 0 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 1)
+[pid: 5637|app: 0|req: 3/3] 127.0.0.1 () {24 vars in 269 bytes} [Wed Sep  5 11:23:12 2018] GET /api => generated 94 bytes in 0 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 0)
+[pid: 5637|app: 0|req: 4/4] 127.0.0.1 () {24 vars in 263 bytes} [Wed Sep  5 11:29:13 2018] GET / => generated 49 bytes in 0 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 1)
+[pid: 5636|app: 0|req: 1/5] 127.0.0.1 () {24 vars in 263 bytes} [Wed Sep  5 11:31:04 2018] GET / => generated 49 bytes in 1 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 0)
+[pid: 5637|app: 0|req: 5/6] 127.0.0.1 () {24 vars in 269 bytes} [Wed Sep  5 11:31:17 2018] GET /api => generated 94 bytes in 0 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+!!! uWSGI process 5636 got Segmentation Fault !!!
+!!! uWSGI process 5637 got Segmentation Fault !!!
+*** backtrace of 5636 ***
+uwsgi(uwsgi_backtrace+0x2e) [0x463eee]
+uwsgi(uwsgi_segfault+0x21) [0x464281]
+/lib64/libc.so.6(+0x362f0) [0x7f48b25f32f0]
+/opt/rh/rh-python36/root/usr/lib64/python3.6/site-packages/google/protobuf/pyext/_message.cpython-36m-x86_64-linux-gnu.so(+0xbab03) [0x7f48a2368b03]
+/opt/rh/rh-python36/root/usr/lib64/libpython3.6m.so.rh-python36-1.0(+0xd5a3e) [0x7f48b2c96a3e]
+/opt/rh/rh-python36/root/usr/lib64/libpython3.6m.so.rh-python36-1.0(+0xf5396) [0x7f48b2cb6396]
+/opt/rh/rh-python36/root/usr/lib64/libpython3.6m.so.rh-python36-1.0(PyDict_Clear+0x1c9) [0x7f48b2c9d099]
+/opt/rh/rh-python36/root/usr/lib64/libpython3.6m.so.rh-python36-1.0(+0xdc0d9) [0x7f48b2c9d0d9]
+/opt/rh/rh-python36/root/usr/lib64/libpython3.6m.so.rh-python36-1.0(+0x186561) [0x7f48b2d47561]
+/opt/rh/rh-python36/root/usr/lib64/libpython3.6m.so.rh-python36-1.0(_PyGC_CollectNoFail+0x29) [0x7f48b2da43d9]
+/opt/rh/rh-python36/root/usr/lib64/libpython3.6m.so.rh-python36-1.0(PyImport_Cleanup+0x155) [0x7f48b2d2a155]
+/opt/rh/rh-python36/root/usr/lib64/libpython3.6m.so.rh-python36-1.0(Py_FinalizeEx+0x67) [0x7f48b2d9af07]
+uwsgi(uwsgi_plugins_atexit+0x71) [0x4614a1]
+/lib64/libc.so.6(+0x39bd9) [0x7f48b25f6bd9]
+/lib64/libc.so.6(+0x39c27) [0x7f48b25f6c27]
+uwsgi() [0x41d8ff]
+uwsgi(end_me+0x25) [0x4614f5]
+/lib64/libpthread.so.0(+0xf6d0) [0x7f48b38016d0]
+/lib64/libpthread.so.0(+0xe51d) [0x7f48b380051d]
+/lib64/libpthread.so.0(+0x9e1b) [0x7f48b37fbe1b]
+/lib64/libpthread.so.0(pthread_mutex_lock+0x68) [0x7f48b37fbce8]
+uwsgi(wsgi_req_accept+0x48) [0x41b228]
+uwsgi(simple_loop_run+0xb6) [0x460506]
+uwsgi(simple_loop+0xe) [0x46033e]
+uwsgi(uwsgi_ignition+0x192) [0x4644d2]
+uwsgi(uwsgi_worker_run+0x2ed) [0x468c4d]
+uwsgi() [0x46920f]
+uwsgi(_start+0) [0x41a78e]
+/lib64/libc.so.6(__libc_start_main+0xf5) [0x7f48b25df445]
+uwsgi() [0x41a7b7]
+*** end of backtrace ***
+*** backtrace of 5637 ***
+uwsgi(uwsgi_backtrace+0x2e) [0x463eee]
+uwsgi(uwsgi_segfault+0x21) [0x464281]
+/lib64/libc.so.6(+0x362f0) [0x7f48b25f32f0]
+/opt/rh/rh-python36/root/usr/lib64/python3.6/site-packages/google/protobuf/pyext/_message.cpython-36m-x86_64-linux-gnu.so(+0xbab03) [0x7f48a2368b03]
+/opt/rh/rh-python36/root/usr/lib64/libpython3.6m.so.rh-python36-1.0(+0xd5a3e) [0x7f48b2c96a3e]
+/opt/rh/rh-python36/root/usr/lib64/libpython3.6m.so.rh-python36-1.0(+0xf5396) [0x7f48b2cb6396]
+/opt/rh/rh-python36/root/usr/lib64/libpython3.6m.so.rh-python36-1.0(PyDict_Clear+0x1c9) [0x7f48b2c9d099]
+/opt/rh/rh-python36/root/usr/lib64/libpython3.6m.so.rh-python36-1.0(+0xdc0d9) [0x7f48b2c9d0d9]
+/opt/rh/rh-python36/root/usr/lib64/libpython3.6m.so.rh-python36-1.0(+0x186561) [0x7f48b2d47561]
+/opt/rh/rh-python36/root/usr/lib64/libpython3.6m.so.rh-python36-1.0(_PyGC_CollectNoFail+0x29) [0x7f48b2da43d9]
+/opt/rh/rh-python36/root/usr/lib64/libpython3.6m.so.rh-python36-1.0(PyImport_Cleanup+0x155) [0x7f48b2d2a155]
+/opt/rh/rh-python36/root/usr/lib64/libpython3.6m.so.rh-python36-1.0(Py_FinalizeEx+0x67) [0x7f48b2d9af07]
+uwsgi(uwsgi_plugins_atexit+0x71) [0x4614a1]
+/lib64/libc.so.6(+0x39bd9) [0x7f48b25f6bd9]
+/lib64/libc.so.6(+0x39c27) [0x7f48b25f6c27]
+uwsgi() [0x41d8ff]
+uwsgi(end_me+0x25) [0x4614f5]
+/lib64/libpthread.so.0(+0xf6d0) [0x7f48b38016d0]
+/lib64/libpthread.so.0(+0xe51d) [0x7f48b380051d]
+/lib64/libpthread.so.0(+0x9e1b) [0x7f48b37fbe1b]
+/lib64/libpthread.so.0(pthread_mutex_lock+0x68) [0x7f48b37fbce8]
+uwsgi(wsgi_req_accept+0x48) [0x41b228]
+uwsgi(simple_loop_run+0xb6) [0x460506]
+uwsgi(simple_loop+0xe) [0x46033e]
+uwsgi(uwsgi_ignition+0x192) [0x4644d2]
+uwsgi(uwsgi_worker_run+0x2ed) [0x468c4d]
+uwsgi() [0x46920f]
+uwsgi(_start+0) [0x41a78e]
+/lib64/libc.so.6(__libc_start_main+0xf5) [0x7f48b25df445]
+uwsgi() [0x41a7b7]
+*** end of backtrace ***
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
