@@ -27,6 +27,7 @@ class DistanceMatrix():
 			origins=self.origin_locations, 
 			destinations=self.destination_locations
 			)
+		print(distance_matrix)
 		print("done.")
 
 		return distance_matrix
