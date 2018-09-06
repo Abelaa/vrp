@@ -356,3 +356,789 @@ uwsgi() [0x41a7b7]
 worker 1 buried after 1 seconds
 worker 2 buried after 1 seconds
 goodbye to uWSGI.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Wed Sep  5 11:04:16 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-28) on 03 September 2018 10:47:15
+os: Linux-3.10.0-862.11.6.el7.x86_64 #1 SMP Tue Aug 14 21:49:04 UTC 2018
+nodename: centos-app
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/hailemaryammecca/VehicleRoutingRESTService
+detected binary path: /opt/rh/rh-python36/root/usr/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 29211
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:7000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.3 (default, Mar 20 2018, 13:50:41)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)]
+Python main interpreter initialized at 0x17656b0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 250032 bytes (244 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x17656b0 pid: 11787 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 11787)
+spawned uWSGI worker 1 (pid: 11789, cores: 2)
+writing pidfile to pid_list.txt
+spawned uWSGI worker 2 (pid: 11790, cores: 2)
+writing pidfile to pid_list.txt
+writing pidfile to pid_list.txt
+[pid: 11789|app: 0|req: 1/1] 196.188.127.103 () {34 vars in 608 bytes} [Wed Sep  5 11:04:19 2018] GET / => generated 49 bytes in 0 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 0)
+[pid: 11789|app: 0|req: 2/2] 196.188.127.103 () {36 vars in 613 bytes} [Wed Sep  5 11:04:19 2018] GET /favicon.ico => generated 60 bytes in 0 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 1)
+fetching matrix...
+{'destination_addresses': ['Unnamed Road, Nazret, Ethiopia', 'Bahir Dar, Ethiopia', 'Bahir Dar, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', ''], 'origin_addresses': ['Unnamed Road, Nazret, Ethiopia', 'Bahir Dar, Ethiopia', 'Bahir Dar, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', ''], 'rows': [{'elements': [{'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '589 km', 'value': 588624}, 'duration': {'text': '10 hours 18 mins', 'value': 37063}, 'status': 'OK'}, {'distance': {'text': '589 km', 'value': 588624}, 'duration': {'text': '10 hours 18 mins', 'value': 37063}, 'status': 'OK'}, {'distance': {'text': '91.1 km', 'value': 91145}, 'duration': {'text': '1 hour 14 mins', 'value': 4457}, 'status': 'OK'}, {'status': 'NOT_FOUND'}]}, {'elements': [{'distance': {'text': '582 km', 'value': 582300}, 'duration': {'text': '10 hours 13 mins', 'value': 36809}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '502 km', 'value': 502062}, 'duration': {'text': '9 hours 7 mins', 'value': 32824}, 'status': 'OK'}, {'status': 'NOT_FOUND'}]}, {'elements': [{'distance': {'text': '582 km', 'value': 582300}, 'duration': {'text': '10 hours 13 mins', 'value': 36809}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '502 km', 'value': 502062}, 'duration': {'text': '9 hours 7 mins', 'value': 32824}, 'status': 'OK'}, {'status': 'NOT_FOUND'}]}, {'elements': [{'distance': {'text': '80.2 km', 'value': 80238}, 'duration': {'text': '1 hour 6 mins', 'value': 3985}, 'status': 'OK'}, {'distance': {'text': '504 km', 'value': 503628}, 'duration': {'text': '9 hours 12 mins', 'value': 33120}, 'status': 'OK'}, {'distance': {'text': '504 km', 'value': 503628}, 'duration': {'text': '9 hours 12 mins', 'value': 33120}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'status': 'NOT_FOUND'}]}, {'elements': [{'status': 'NOT_FOUND'}, {'status': 'NOT_FOUND'}, {'status': 'NOT_FOUND'}, {'status': 'NOT_FOUND'}, {'status': 'NOT_FOUND'}]}], 'status': 'OK'}
+done.
+[pid: 11790|app: 0|req: 1/3] 196.188.127.103 () {40 vars in 674 bytes} [Wed Sep  5 11:04:35 2018] POST /api => generated 106 bytes in 226 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 0)
+fetching matrix...
+{'destination_addresses': ['Unnamed Road, Nazret, Ethiopia', 'Bahir Dar, Ethiopia', 'Bahir Dar, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Unnamed Road, Awassa, Ethiopia'], 'origin_addresses': ['Unnamed Road, Nazret, Ethiopia', 'Bahir Dar, Ethiopia', 'Bahir Dar, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Unnamed Road, Awassa, Ethiopia'], 'rows': [{'elements': [{'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '589 km', 'value': 588624}, 'duration': {'text': '10 hours 18 mins', 'value': 37063}, 'status': 'OK'}, {'distance': {'text': '589 km', 'value': 588624}, 'duration': {'text': '10 hours 18 mins', 'value': 37063}, 'status': 'OK'}, {'distance': {'text': '91.1 km', 'value': 91145}, 'duration': {'text': '1 hour 14 mins', 'value': 4457}, 'status': 'OK'}, {'distance': {'text': '223 km', 'value': 223065}, 'duration': {'text': '3 hours 50 mins', 'value': 13779}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '582 km', 'value': 582300}, 'duration': {'text': '10 hours 13 mins', 'value': 36809}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '502 km', 'value': 502062}, 'duration': {'text': '9 hours 7 mins', 'value': 32824}, 'status': 'OK'}, {'distance': {'text': '771 km', 'value': 770642}, 'duration': {'text': '13 hours 13 mins', 'value': 47555}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '582 km', 'value': 582300}, 'duration': {'text': '10 hours 13 mins', 'value': 36809}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '502 km', 'value': 502062}, 'duration': {'text': '9 hours 7 mins', 'value': 32824}, 'status': 'OK'}, {'distance': {'text': '771 km', 'value': 770642}, 'duration': {'text': '13 hours 13 mins', 'value': 47555}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '80.2 km', 'value': 80238}, 'duration': {'text': '1 hour 6 mins', 'value': 3985}, 'status': 'OK'}, {'distance': {'text': '504 km', 'value': 503628}, 'duration': {'text': '9 hours 12 mins', 'value': 33120}, 'status': 'OK'}, {'distance': {'text': '504 km', 'value': 503628}, 'duration': {'text': '9 hours 12 mins', 'value': 33120}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '269 km', 'value': 268580}, 'duration': {'text': '4 hours 6 mins', 'value': 14731}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '223 km', 'value': 223063}, 'duration': {'text': '3 hours 44 mins', 'value': 13448}, 'status': 'OK'}, {'distance': {'text': '772 km', 'value': 771578}, 'duration': {'text': '13 hours 13 mins', 'value': 47606}, 'status': 'OK'}, {'distance': {'text': '772 km', 'value': 771578}, 'duration': {'text': '13 hours 13 mins', 'value': 47606}, 'status': 'OK'}, {'distance': {'text': '274 km', 'value': 274099}, 'duration': {'text': '4 hours 10 mins', 'value': 15000}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}]}], 'status': 'OK'}
+done.
+solving...
+Done.
+[pid: 11789|app: 0|req: 3/4] 196.188.127.103 () {40 vars in 674 bytes} [Wed Sep  5 11:05:00 2018] POST /api => generated 170 bytes in 202 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 0)
+fetching matrix...
+{'destination_addresses': ['Unnamed Road, Nazret, Ethiopia', 'Bahir Dar, Ethiopia', 'Bahir Dar, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Unnamed Road, Awassa, Ethiopia'], 'origin_addresses': ['Unnamed Road, Nazret, Ethiopia', 'Bahir Dar, Ethiopia', 'Bahir Dar, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Unnamed Road, Awassa, Ethiopia'], 'rows': [{'elements': [{'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '589 km', 'value': 588624}, 'duration': {'text': '10 hours 18 mins', 'value': 37063}, 'status': 'OK'}, {'distance': {'text': '589 km', 'value': 588624}, 'duration': {'text': '10 hours 18 mins', 'value': 37063}, 'status': 'OK'}, {'distance': {'text': '91.1 km', 'value': 91145}, 'duration': {'text': '1 hour 14 mins', 'value': 4457}, 'status': 'OK'}, {'distance': {'text': '223 km', 'value': 223065}, 'duration': {'text': '3 hours 50 mins', 'value': 13779}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '582 km', 'value': 582300}, 'duration': {'text': '10 hours 13 mins', 'value': 36809}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '502 km', 'value': 502062}, 'duration': {'text': '9 hours 7 mins', 'value': 32824}, 'status': 'OK'}, {'distance': {'text': '771 km', 'value': 770642}, 'duration': {'text': '13 hours 13 mins', 'value': 47555}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '582 km', 'value': 582300}, 'duration': {'text': '10 hours 13 mins', 'value': 36809}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '502 km', 'value': 502062}, 'duration': {'text': '9 hours 7 mins', 'value': 32824}, 'status': 'OK'}, {'distance': {'text': '771 km', 'value': 770642}, 'duration': {'text': '13 hours 13 mins', 'value': 47555}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '80.2 km', 'value': 80238}, 'duration': {'text': '1 hour 6 mins', 'value': 3985}, 'status': 'OK'}, {'distance': {'text': '504 km', 'value': 503628}, 'duration': {'text': '9 hours 12 mins', 'value': 33120}, 'status': 'OK'}, {'distance': {'text': '504 km', 'value': 503628}, 'duration': {'text': '9 hours 12 mins', 'value': 33120}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '269 km', 'value': 268580}, 'duration': {'text': '4 hours 6 mins', 'value': 14731}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '223 km', 'value': 223063}, 'duration': {'text': '3 hours 44 mins', 'value': 13448}, 'status': 'OK'}, {'distance': {'text': '772 km', 'value': 771578}, 'duration': {'text': '13 hours 13 mins', 'value': 47606}, 'status': 'OK'}, {'distance': {'text': '772 km', 'value': 771578}, 'duration': {'text': '13 hours 13 mins', 'value': 47606}, 'status': 'OK'}, {'distance': {'text': '274 km', 'value': 274099}, 'duration': {'text': '4 hours 10 mins', 'value': 15000}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}]}], 'status': 'OK'}
+done.
+solving...
+Done.
+[pid: 11789|app: 0|req: 4/5] 196.188.127.103 () {40 vars in 674 bytes} [Wed Sep  5 11:05:14 2018] POST /api => generated 170 bytes in 151 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 1)
+fetching matrix...
+{'destination_addresses': ['Unnamed Road, Nazret, Ethiopia', 'Bahir Dar, Ethiopia', 'Bahir Dar, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Unnamed Road, Awassa, Ethiopia'], 'origin_addresses': ['Unnamed Road, Nazret, Ethiopia', 'Bahir Dar, Ethiopia', 'Bahir Dar, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Unnamed Road, Awassa, Ethiopia'], 'rows': [{'elements': [{'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '589 km', 'value': 588624}, 'duration': {'text': '10 hours 18 mins', 'value': 37063}, 'status': 'OK'}, {'distance': {'text': '589 km', 'value': 588624}, 'duration': {'text': '10 hours 18 mins', 'value': 37063}, 'status': 'OK'}, {'distance': {'text': '91.1 km', 'value': 91145}, 'duration': {'text': '1 hour 14 mins', 'value': 4457}, 'status': 'OK'}, {'distance': {'text': '223 km', 'value': 223065}, 'duration': {'text': '3 hours 50 mins', 'value': 13779}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '582 km', 'value': 582300}, 'duration': {'text': '10 hours 13 mins', 'value': 36809}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '502 km', 'value': 502062}, 'duration': {'text': '9 hours 7 mins', 'value': 32824}, 'status': 'OK'}, {'distance': {'text': '771 km', 'value': 770642}, 'duration': {'text': '13 hours 13 mins', 'value': 47555}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '582 km', 'value': 582300}, 'duration': {'text': '10 hours 13 mins', 'value': 36809}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '502 km', 'value': 502062}, 'duration': {'text': '9 hours 7 mins', 'value': 32824}, 'status': 'OK'}, {'distance': {'text': '771 km', 'value': 770642}, 'duration': {'text': '13 hours 13 mins', 'value': 47555}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '80.2 km', 'value': 80238}, 'duration': {'text': '1 hour 6 mins', 'value': 3985}, 'status': 'OK'}, {'distance': {'text': '504 km', 'value': 503628}, 'duration': {'text': '9 hours 12 mins', 'value': 33120}, 'status': 'OK'}, {'distance': {'text': '504 km', 'value': 503628}, 'duration': {'text': '9 hours 12 mins', 'value': 33120}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '269 km', 'value': 268580}, 'duration': {'text': '4 hours 6 mins', 'value': 14731}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '223 km', 'value': 223063}, 'duration': {'text': '3 hours 44 mins', 'value': 13448}, 'status': 'OK'}, {'distance': {'text': '772 km', 'value': 771578}, 'duration': {'text': '13 hours 13 mins', 'value': 47606}, 'status': 'OK'}, {'distance': {'text': '772 km', 'value': 771578}, 'duration': {'text': '13 hours 13 mins', 'value': 47606}, 'status': 'OK'}, {'distance': {'text': '274 km', 'value': 274099}, 'duration': {'text': '4 hours 10 mins', 'value': 15000}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}]}], 'status': 'OK'}
+done.
+solving...
+Done.
+[pid: 11790|app: 0|req: 2/6] 196.188.127.103 () {40 vars in 674 bytes} [Wed Sep  5 11:05:16 2018] POST /api => generated 170 bytes in 170 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 0)
+fetching matrix...
+{'destination_addresses': ['', '', '', '', ''], 'origin_addresses': ['', '', '', '', ''], 'rows': [{'elements': [{'status': 'NOT_FOUND'}, {'status': 'NOT_FOUND'}, {'status': 'NOT_FOUND'}, {'status': 'NOT_FOUND'}, {'status': 'NOT_FOUND'}]}, {'elements': [{'status': 'NOT_FOUND'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '502 km', 'value': 502062}, 'duration': {'text': '9 hours 7 mins', 'value': 32824}, 'status': 'OK'}, {'distance': {'text': '771 km', 'value': 770642}, 'duration': {'text': '13 hours 13 mins', 'value': 47555}, 'status': 'OK'}]}, {'elements': [{'status': 'NOT_FOUND'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '502 km', 'value': 502062}, 'duration': {'text': '9 hours 7 mins', 'value': 32824}, 'status': 'OK'}, {'distance': {'text': '771 km', 'value': 770642}, 'duration': {'text': '13 hours 13 mins', 'value': 47555}, 'status': 'OK'}]}, {'elements': [{'status': 'NOT_FOUND'}, {'distance': {'text': '504 km', 'value': 503628}, 'duration': {'text': '9 hours 12 mins', 'value': 33120}, 'status': 'OK'}, {'distance': {'text': '504 km', 'value': 503628}, 'duration': {'text': '9 hours 12 mins', 'value': 33120}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '269 km', 'value': 268580}, 'duration': {'text': '4 hours 6 mins', 'value': 14731}, 'status': 'OK'}]}, {'elements': [{'status': 'NOT_FOUND'}, {'distance': {'text': '772 km', 'value': 771578}, 'duration': {'text': '13 hours 13 mins', 'value': 47606}, 'status': 'OK'}, {'distance': {'text': '772 km', 'value': 771578}, 'duration': {'text': '13 hours 13 mins', 'value': 47606}, 'status': 'OK'}, {'distance': {'text': '274 km', 'value': 274099}, 'duration': {'text': '4 hours 10 mins', 'value': 15000}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}]}], 'status': 'OK'}
+done.
+[pid: 11790|app: 0|req: 3/7] 196.188.127.103 () {40 vars in 674 bytes} [Wed Sep  5 11:05:27 2018] POST /api => generated 106 bytes in 214 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 1)
+fetching matrix...
+{'destination_addresses': ['Unnamed Road, Nazret, Ethiopia', 'Bahir Dar, Ethiopia', 'Bahir Dar, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Unnamed Road, Awassa, Ethiopia'], 'origin_addresses': ['Unnamed Road, Nazret, Ethiopia', 'Bahir Dar, Ethiopia', 'Bahir Dar, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Unnamed Road, Awassa, Ethiopia'], 'rows': [{'elements': [{'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '589 km', 'value': 588624}, 'duration': {'text': '10 hours 18 mins', 'value': 37063}, 'status': 'OK'}, {'distance': {'text': '589 km', 'value': 588624}, 'duration': {'text': '10 hours 18 mins', 'value': 37063}, 'status': 'OK'}, {'distance': {'text': '91.1 km', 'value': 91145}, 'duration': {'text': '1 hour 14 mins', 'value': 4457}, 'status': 'OK'}, {'distance': {'text': '223 km', 'value': 223065}, 'duration': {'text': '3 hours 50 mins', 'value': 13779}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '582 km', 'value': 582300}, 'duration': {'text': '10 hours 13 mins', 'value': 36809}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '502 km', 'value': 502062}, 'duration': {'text': '9 hours 7 mins', 'value': 32824}, 'status': 'OK'}, {'distance': {'text': '771 km', 'value': 770642}, 'duration': {'text': '13 hours 13 mins', 'value': 47555}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '582 km', 'value': 582300}, 'duration': {'text': '10 hours 13 mins', 'value': 36809}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '502 km', 'value': 502062}, 'duration': {'text': '9 hours 7 mins', 'value': 32824}, 'status': 'OK'}, {'distance': {'text': '771 km', 'value': 770642}, 'duration': {'text': '13 hours 13 mins', 'value': 47555}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '80.2 km', 'value': 80238}, 'duration': {'text': '1 hour 6 mins', 'value': 3985}, 'status': 'OK'}, {'distance': {'text': '504 km', 'value': 503628}, 'duration': {'text': '9 hours 12 mins', 'value': 33120}, 'status': 'OK'}, {'distance': {'text': '504 km', 'value': 503628}, 'duration': {'text': '9 hours 12 mins', 'value': 33120}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '269 km', 'value': 268580}, 'duration': {'text': '4 hours 6 mins', 'value': 14731}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '223 km', 'value': 223063}, 'duration': {'text': '3 hours 44 mins', 'value': 13448}, 'status': 'OK'}, {'distance': {'text': '772 km', 'value': 771578}, 'duration': {'text': '13 hours 13 mins', 'value': 47606}, 'status': 'OK'}, {'distance': {'text': '772 km', 'value': 771578}, 'duration': {'text': '13 hours 13 mins', 'value': 47606}, 'status': 'OK'}, {'distance': {'text': '274 km', 'value': 274099}, 'duration': {'text': '4 hours 10 mins', 'value': 15000}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}]}], 'status': 'OK'}
+done.
+solving...
+Done.
+[pid: 11790|app: 0|req: 4/8] 196.188.127.103 () {40 vars in 674 bytes} [Wed Sep  5 11:05:32 2018] POST /api => generated 170 bytes in 182 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 0)
+fetching matrix...
+{'destination_addresses': ['Unnamed Road, Nazret, Ethiopia', 'Bahir Dar, Ethiopia', 'Bahir Dar, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Unnamed Road, Awassa, Ethiopia'], 'origin_addresses': ['Unnamed Road, Nazret, Ethiopia', 'Bahir Dar, Ethiopia', 'Bahir Dar, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Unnamed Road, Awassa, Ethiopia'], 'rows': [{'elements': [{'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '589 km', 'value': 588624}, 'duration': {'text': '10 hours 18 mins', 'value': 37063}, 'status': 'OK'}, {'distance': {'text': '589 km', 'value': 588624}, 'duration': {'text': '10 hours 18 mins', 'value': 37063}, 'status': 'OK'}, {'distance': {'text': '91.1 km', 'value': 91145}, 'duration': {'text': '1 hour 14 mins', 'value': 4457}, 'status': 'OK'}, {'distance': {'text': '223 km', 'value': 223065}, 'duration': {'text': '3 hours 50 mins', 'value': 13779}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '582 km', 'value': 582300}, 'duration': {'text': '10 hours 13 mins', 'value': 36809}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '502 km', 'value': 502062}, 'duration': {'text': '9 hours 7 mins', 'value': 32824}, 'status': 'OK'}, {'distance': {'text': '771 km', 'value': 770642}, 'duration': {'text': '13 hours 13 mins', 'value': 47555}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '582 km', 'value': 582300}, 'duration': {'text': '10 hours 13 mins', 'value': 36809}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '502 km', 'value': 502062}, 'duration': {'text': '9 hours 7 mins', 'value': 32824}, 'status': 'OK'}, {'distance': {'text': '771 km', 'value': 770642}, 'duration': {'text': '13 hours 13 mins', 'value': 47555}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '80.2 km', 'value': 80238}, 'duration': {'text': '1 hour 6 mins', 'value': 3985}, 'status': 'OK'}, {'distance': {'text': '504 km', 'value': 503628}, 'duration': {'text': '9 hours 12 mins', 'value': 33120}, 'status': 'OK'}, {'distance': {'text': '504 km', 'value': 503628}, 'duration': {'text': '9 hours 12 mins', 'value': 33120}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '269 km', 'value': 268580}, 'duration': {'text': '4 hours 6 mins', 'value': 14731}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '223 km', 'value': 223063}, 'duration': {'text': '3 hours 44 mins', 'value': 13448}, 'status': 'OK'}, {'distance': {'text': '772 km', 'value': 771578}, 'duration': {'text': '13 hours 13 mins', 'value': 47606}, 'status': 'OK'}, {'distance': {'text': '772 km', 'value': 771578}, 'duration': {'text': '13 hours 13 mins', 'value': 47606}, 'status': 'OK'}, {'distance': {'text': '274 km', 'value': 274099}, 'duration': {'text': '4 hours 10 mins', 'value': 15000}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}]}], 'status': 'OK'}
+done.
+solving...
+Done.
+[pid: 11790|app: 0|req: 5/9] 196.188.127.103 () {40 vars in 674 bytes} [Wed Sep  5 11:05:47 2018] POST /api => generated 170 bytes in 167 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 1)
+[pid: 11790|app: 0|req: 6/10] 196.188.127.103 () {34 vars in 608 bytes} [Wed Sep  5 11:09:32 2018] GET / => generated 49 bytes in 0 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 0)
+[pid: 11790|app: 0|req: 7/11] 196.188.127.103 () {36 vars in 613 bytes} [Wed Sep  5 11:09:32 2018] GET /favicon.ico => generated 60 bytes in 0 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 1)
+fetching matrix...
+{'destination_addresses': ['Unnamed Road, Nazret, Ethiopia', 'Bahir Dar, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Unnamed Road, Awassa, Ethiopia'], 'origin_addresses': ['Unnamed Road, Nazret, Ethiopia', 'Bahir Dar, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Unnamed Road, Awassa, Ethiopia'], 'rows': [{'elements': [{'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '589 km', 'value': 588624}, 'duration': {'text': '10 hours 18 mins', 'value': 37063}, 'status': 'OK'}, {'distance': {'text': '91.1 km', 'value': 91145}, 'duration': {'text': '1 hour 14 mins', 'value': 4457}, 'status': 'OK'}, {'distance': {'text': '223 km', 'value': 223065}, 'duration': {'text': '3 hours 50 mins', 'value': 13779}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '582 km', 'value': 582300}, 'duration': {'text': '10 hours 13 mins', 'value': 36809}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '502 km', 'value': 502062}, 'duration': {'text': '9 hours 7 mins', 'value': 32824}, 'status': 'OK'}, {'distance': {'text': '771 km', 'value': 770642}, 'duration': {'text': '13 hours 13 mins', 'value': 47555}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '80.2 km', 'value': 80238}, 'duration': {'text': '1 hour 6 mins', 'value': 3985}, 'status': 'OK'}, {'distance': {'text': '504 km', 'value': 503628}, 'duration': {'text': '9 hours 12 mins', 'value': 33120}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '269 km', 'value': 268580}, 'duration': {'text': '4 hours 6 mins', 'value': 14731}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '223 km', 'value': 223063}, 'duration': {'text': '3 hours 44 mins', 'value': 13448}, 'status': 'OK'}, {'distance': {'text': '772 km', 'value': 771578}, 'duration': {'text': '13 hours 13 mins', 'value': 47606}, 'status': 'OK'}, {'distance': {'text': '274 km', 'value': 274099}, 'duration': {'text': '4 hours 10 mins', 'value': 15000}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}]}], 'status': 'OK'}
+done.
+solving...
+Done.
+[pid: 11790|app: 0|req: 8/12] 196.188.127.103 () {36 vars in 485 bytes} [Wed Sep  5 11:52:55 2018] POST /api => generated 167 bytes in 184 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 1)
+fetching matrix...
+{'destination_addresses': ['Unnamed Road, Nazret, Ethiopia', 'Bahir Dar, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Unnamed Road, Awassa, Ethiopia', '7, Ethiopia'], 'origin_addresses': ['Unnamed Road, Nazret, Ethiopia', 'Bahir Dar, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Unnamed Road, Awassa, Ethiopia', '7, Ethiopia'], 'rows': [{'elements': [{'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '589 km', 'value': 588624}, 'duration': {'text': '10 hours 18 mins', 'value': 37063}, 'status': 'OK'}, {'distance': {'text': '91.1 km', 'value': 91145}, 'duration': {'text': '1 hour 14 mins', 'value': 4457}, 'status': 'OK'}, {'distance': {'text': '223 km', 'value': 223065}, 'duration': {'text': '3 hours 50 mins', 'value': 13779}, 'status': 'OK'}, {'distance': {'text': '88.6 km', 'value': 88577}, 'duration': {'text': '1 hour 35 mins', 'value': 5724}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '582 km', 'value': 582300}, 'duration': {'text': '10 hours 13 mins', 'value': 36809}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '502 km', 'value': 502062}, 'duration': {'text': '9 hours 7 mins', 'value': 32824}, 'status': 'OK'}, {'distance': {'text': '771 km', 'value': 770642}, 'duration': {'text': '13 hours 13 mins', 'value': 47555}, 'status': 'OK'}, {'distance': {'text': '636 km', 'value': 636155}, 'duration': {'text': '10 hours 58 mins', 'value': 39500}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '80.2 km', 'value': 80238}, 'duration': {'text': '1 hour 6 mins', 'value': 3985}, 'status': 'OK'}, {'distance': {'text': '504 km', 'value': 503628}, 'duration': {'text': '9 hours 12 mins', 'value': 33120}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '269 km', 'value': 268580}, 'duration': {'text': '4 hours 6 mins', 'value': 14731}, 'status': 'OK'}, {'distance': {'text': '134 km', 'value': 134093}, 'duration': {'text': '1 hour 51 mins', 'value': 6676}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '223 km', 'value': 223063}, 'duration': {'text': '3 hours 44 mins', 'value': 13448}, 'status': 'OK'}, {'distance': {'text': '772 km', 'value': 771578}, 'duration': {'text': '13 hours 13 mins', 'value': 47606}, 'status': 'OK'}, {'distance': {'text': '274 km', 'value': 274099}, 'duration': {'text': '4 hours 10 mins', 'value': 15000}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '134 km', 'value': 134495}, 'duration': {'text': '2 hours 12 mins', 'value': 7908}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '88.6 km', 'value': 88568}, 'duration': {'text': '1 hour 32 mins', 'value': 5540}, 'status': 'OK'}, {'distance': {'text': '637 km', 'value': 637083}, 'duration': {'text': '11 hours 2 mins', 'value': 39698}, 'status': 'OK'}, {'distance': {'text': '140 km', 'value': 139604}, 'duration': {'text': '1 hour 58 mins', 'value': 7092}, 'status': 'OK'}, {'distance': {'text': '134 km', 'value': 134487}, 'duration': {'text': '2 hours 14 mins', 'value': 8055}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}]}], 'status': 'OK'}
+done.
+solving...
+Done.
+[pid: 11790|app: 0|req: 9/13] 196.188.127.103 () {30 vars in 403 bytes} [Wed Sep  5 11:55:53 2018] POST /api => generated 170 bytes in 166 msecs (HTTP/1.1 200) 1 headers in 44 bytes (1 switches on core 0)
+fetching matrix...
+{'destination_addresses': ['Unnamed Road, Nazret, Ethiopia', 'Bahir Dar, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Unnamed Road, Awassa, Ethiopia', '7, Ethiopia'], 'origin_addresses': ['Unnamed Road, Nazret, Ethiopia', 'Bahir Dar, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Unnamed Road, Awassa, Ethiopia', '7, Ethiopia'], 'rows': [{'elements': [{'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '589 km', 'value': 588624}, 'duration': {'text': '10 hours 18 mins', 'value': 37063}, 'status': 'OK'}, {'distance': {'text': '91.1 km', 'value': 91145}, 'duration': {'text': '1 hour 14 mins', 'value': 4457}, 'status': 'OK'}, {'distance': {'text': '223 km', 'value': 223065}, 'duration': {'text': '3 hours 50 mins', 'value': 13779}, 'status': 'OK'}, {'distance': {'text': '88.6 km', 'value': 88577}, 'duration': {'text': '1 hour 35 mins', 'value': 5724}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '582 km', 'value': 582300}, 'duration': {'text': '10 hours 13 mins', 'value': 36809}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '502 km', 'value': 502062}, 'duration': {'text': '9 hours 7 mins', 'value': 32824}, 'status': 'OK'}, {'distance': {'text': '771 km', 'value': 770642}, 'duration': {'text': '13 hours 13 mins', 'value': 47555}, 'status': 'OK'}, {'distance': {'text': '636 km', 'value': 636155}, 'duration': {'text': '10 hours 58 mins', 'value': 39500}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '80.2 km', 'value': 80238}, 'duration': {'text': '1 hour 6 mins', 'value': 3985}, 'status': 'OK'}, {'distance': {'text': '504 km', 'value': 503628}, 'duration': {'text': '9 hours 12 mins', 'value': 33120}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '269 km', 'value': 268580}, 'duration': {'text': '4 hours 6 mins', 'value': 14731}, 'status': 'OK'}, {'distance': {'text': '134 km', 'value': 134093}, 'duration': {'text': '1 hour 51 mins', 'value': 6676}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '223 km', 'value': 223063}, 'duration': {'text': '3 hours 44 mins', 'value': 13448}, 'status': 'OK'}, {'distance': {'text': '772 km', 'value': 771578}, 'duration': {'text': '13 hours 13 mins', 'value': 47606}, 'status': 'OK'}, {'distance': {'text': '274 km', 'value': 274099}, 'duration': {'text': '4 hours 10 mins', 'value': 15000}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '134 km', 'value': 134495}, 'duration': {'text': '2 hours 12 mins', 'value': 7908}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '88.6 km', 'value': 88568}, 'duration': {'text': '1 hour 32 mins', 'value': 5540}, 'status': 'OK'}, {'distance': {'text': '637 km', 'value': 637083}, 'duration': {'text': '11 hours 2 mins', 'value': 39698}, 'status': 'OK'}, {'distance': {'text': '140 km', 'value': 139604}, 'duration': {'text': '1 hour 58 mins', 'value': 7092}, 'status': 'OK'}, {'distance': {'text': '134 km', 'value': 134487}, 'duration': {'text': '2 hours 14 mins', 'value': 8055}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}]}], 'status': 'OK'}
+done.
+solving...
+Done.
+[pid: 11789|app: 0|req: 5/14] 196.188.127.103 () {30 vars in 403 bytes} [Wed Sep  5 11:58:09 2018] POST /api => generated 170 bytes in 187 msecs (HTTP/1.1 200) 1 headers in 44 bytes (1 switches on core 0)
+fetching matrix...
+{'destination_addresses': ['Unnamed Road, Nazret, Ethiopia', 'Bahir Dar, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Unnamed Road, Awassa, Ethiopia'], 'origin_addresses': ['Unnamed Road, Nazret, Ethiopia', 'Bahir Dar, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Unnamed Road, Awassa, Ethiopia'], 'rows': [{'elements': [{'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '589 km', 'value': 588624}, 'duration': {'text': '10 hours 18 mins', 'value': 37063}, 'status': 'OK'}, {'distance': {'text': '91.1 km', 'value': 91145}, 'duration': {'text': '1 hour 14 mins', 'value': 4457}, 'status': 'OK'}, {'distance': {'text': '223 km', 'value': 223065}, 'duration': {'text': '3 hours 50 mins', 'value': 13779}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '582 km', 'value': 582300}, 'duration': {'text': '10 hours 13 mins', 'value': 36809}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '502 km', 'value': 502062}, 'duration': {'text': '9 hours 7 mins', 'value': 32824}, 'status': 'OK'}, {'distance': {'text': '771 km', 'value': 770642}, 'duration': {'text': '13 hours 13 mins', 'value': 47555}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '80.2 km', 'value': 80238}, 'duration': {'text': '1 hour 6 mins', 'value': 3985}, 'status': 'OK'}, {'distance': {'text': '504 km', 'value': 503628}, 'duration': {'text': '9 hours 12 mins', 'value': 33120}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '269 km', 'value': 268580}, 'duration': {'text': '4 hours 6 mins', 'value': 14731}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '223 km', 'value': 223063}, 'duration': {'text': '3 hours 44 mins', 'value': 13448}, 'status': 'OK'}, {'distance': {'text': '772 km', 'value': 771578}, 'duration': {'text': '13 hours 13 mins', 'value': 47606}, 'status': 'OK'}, {'distance': {'text': '274 km', 'value': 274099}, 'duration': {'text': '4 hours 10 mins', 'value': 15000}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}]}], 'status': 'OK'}
+done.
+solving...
+Done.
+[pid: 11790|app: 0|req: 10/15] 196.188.127.103 () {36 vars in 485 bytes} [Wed Sep  5 11:58:58 2018] POST /api => generated 167 bytes in 123 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 1)
+fetching matrix...
+{'destination_addresses': ['Unnamed Road, Nazret, Ethiopia', 'Bahir Dar, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Unnamed Road, Awassa, Ethiopia', '7, Ethiopia'], 'origin_addresses': ['Unnamed Road, Nazret, Ethiopia', 'Bahir Dar, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Unnamed Road, Awassa, Ethiopia', '7, Ethiopia'], 'rows': [{'elements': [{'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '589 km', 'value': 588624}, 'duration': {'text': '10 hours 18 mins', 'value': 37063}, 'status': 'OK'}, {'distance': {'text': '91.1 km', 'value': 91145}, 'duration': {'text': '1 hour 14 mins', 'value': 4457}, 'status': 'OK'}, {'distance': {'text': '223 km', 'value': 223065}, 'duration': {'text': '3 hours 50 mins', 'value': 13779}, 'status': 'OK'}, {'distance': {'text': '88.6 km', 'value': 88577}, 'duration': {'text': '1 hour 35 mins', 'value': 5724}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '582 km', 'value': 582300}, 'duration': {'text': '10 hours 13 mins', 'value': 36809}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '502 km', 'value': 502062}, 'duration': {'text': '9 hours 7 mins', 'value': 32824}, 'status': 'OK'}, {'distance': {'text': '771 km', 'value': 770642}, 'duration': {'text': '13 hours 13 mins', 'value': 47555}, 'status': 'OK'}, {'distance': {'text': '636 km', 'value': 636155}, 'duration': {'text': '10 hours 58 mins', 'value': 39500}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '80.2 km', 'value': 80238}, 'duration': {'text': '1 hour 6 mins', 'value': 3985}, 'status': 'OK'}, {'distance': {'text': '504 km', 'value': 503628}, 'duration': {'text': '9 hours 12 mins', 'value': 33120}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '269 km', 'value': 268580}, 'duration': {'text': '4 hours 6 mins', 'value': 14731}, 'status': 'OK'}, {'distance': {'text': '134 km', 'value': 134093}, 'duration': {'text': '1 hour 51 mins', 'value': 6676}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '223 km', 'value': 223063}, 'duration': {'text': '3 hours 44 mins', 'value': 13448}, 'status': 'OK'}, {'distance': {'text': '772 km', 'value': 771578}, 'duration': {'text': '13 hours 13 mins', 'value': 47606}, 'status': 'OK'}, {'distance': {'text': '274 km', 'value': 274099}, 'duration': {'text': '4 hours 10 mins', 'value': 15000}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '134 km', 'value': 134495}, 'duration': {'text': '2 hours 12 mins', 'value': 7908}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '88.6 km', 'value': 88568}, 'duration': {'text': '1 hour 32 mins', 'value': 5540}, 'status': 'OK'}, {'distance': {'text': '637 km', 'value': 637083}, 'duration': {'text': '11 hours 2 mins', 'value': 39698}, 'status': 'OK'}, {'distance': {'text': '140 km', 'value': 139604}, 'duration': {'text': '1 hour 58 mins', 'value': 7092}, 'status': 'OK'}, {'distance': {'text': '134 km', 'value': 134487}, 'duration': {'text': '2 hours 14 mins', 'value': 8055}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}]}], 'status': 'OK'}
+done.
+solving...
+Done.
+[pid: 11790|app: 0|req: 11/16] 196.188.127.103 () {36 vars in 485 bytes} [Wed Sep  5 11:59:25 2018] POST /api => generated 170 bytes in 173 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 0)
+fetching matrix...
+{'destination_addresses': ['Unnamed Road, Nazret, Ethiopia', 'Bahir Dar, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Unnamed Road, Awassa, Ethiopia', '7, Ethiopia'], 'origin_addresses': ['Unnamed Road, Nazret, Ethiopia', 'Bahir Dar, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Unnamed Road, Awassa, Ethiopia', '7, Ethiopia'], 'rows': [{'elements': [{'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '589 km', 'value': 588624}, 'duration': {'text': '10 hours 18 mins', 'value': 37063}, 'status': 'OK'}, {'distance': {'text': '91.1 km', 'value': 91145}, 'duration': {'text': '1 hour 14 mins', 'value': 4457}, 'status': 'OK'}, {'distance': {'text': '223 km', 'value': 223065}, 'duration': {'text': '3 hours 50 mins', 'value': 13779}, 'status': 'OK'}, {'distance': {'text': '88.6 km', 'value': 88577}, 'duration': {'text': '1 hour 35 mins', 'value': 5724}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '582 km', 'value': 582300}, 'duration': {'text': '10 hours 13 mins', 'value': 36809}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '502 km', 'value': 502062}, 'duration': {'text': '9 hours 7 mins', 'value': 32824}, 'status': 'OK'}, {'distance': {'text': '771 km', 'value': 770642}, 'duration': {'text': '13 hours 13 mins', 'value': 47555}, 'status': 'OK'}, {'distance': {'text': '636 km', 'value': 636155}, 'duration': {'text': '10 hours 58 mins', 'value': 39500}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '80.2 km', 'value': 80238}, 'duration': {'text': '1 hour 6 mins', 'value': 3985}, 'status': 'OK'}, {'distance': {'text': '504 km', 'value': 503628}, 'duration': {'text': '9 hours 12 mins', 'value': 33120}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '269 km', 'value': 268580}, 'duration': {'text': '4 hours 6 mins', 'value': 14731}, 'status': 'OK'}, {'distance': {'text': '134 km', 'value': 134093}, 'duration': {'text': '1 hour 51 mins', 'value': 6676}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '223 km', 'value': 223063}, 'duration': {'text': '3 hours 44 mins', 'value': 13448}, 'status': 'OK'}, {'distance': {'text': '772 km', 'value': 771578}, 'duration': {'text': '13 hours 13 mins', 'value': 47606}, 'status': 'OK'}, {'distance': {'text': '274 km', 'value': 274099}, 'duration': {'text': '4 hours 10 mins', 'value': 15000}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '134 km', 'value': 134495}, 'duration': {'text': '2 hours 12 mins', 'value': 7908}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '88.6 km', 'value': 88568}, 'duration': {'text': '1 hour 32 mins', 'value': 5540}, 'status': 'OK'}, {'distance': {'text': '637 km', 'value': 637083}, 'duration': {'text': '11 hours 2 mins', 'value': 39698}, 'status': 'OK'}, {'distance': {'text': '140 km', 'value': 139604}, 'duration': {'text': '1 hour 58 mins', 'value': 7092}, 'status': 'OK'}, {'distance': {'text': '134 km', 'value': 134487}, 'duration': {'text': '2 hours 14 mins', 'value': 8055}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}]}], 'status': 'OK'}
+done.
+solving...
+Done.
+[pid: 11790|app: 0|req: 12/17] 196.188.127.103 () {36 vars in 485 bytes} [Wed Sep  5 12:00:06 2018] POST /api => generated 170 bytes in 178 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 1)
+fetching matrix...
+Traceback (most recent call last):
+  File "wsgi.py", line 30, in application
+    response = VRPService(data).get_response()
+  File "./app.py", line 21, in __init__
+    len(ordered_locations)
+  File "./app.py", line 42, in json_response
+    locations.copy()
+  File "./gmaps.py", line 39, in get_matrix
+    json_data = self.get_json_response()
+  File "./gmaps.py", line 28, in get_json_response
+    destinations=self.destination_locations
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 365, in wrapper
+    result = func(*args, **kwargs)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/distance_matrix.py", line 94, in distance_matrix
+    "origins": convert.location_list(origins),
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/convert.py", line 128, in location_list
+    return "|".join([latlng(location) for location in as_list(arg)])
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/convert.py", line 128, in <listcomp>
+    return "|".join([latlng(location) for location in as_list(arg)])
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/convert.py", line 79, in latlng
+    normalized = normalize_lat_lng(arg)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/convert.py", line 107, in normalize_lat_lng
+    "but got %s" % type(arg).__name__)
+TypeError: Expected a lat/lng dict or tuple, but got float
+[pid: 11790|app: 0|req: 13/18] 196.188.127.103 () {36 vars in 485 bytes} [Wed Sep  5 12:27:57 2018] POST /api => generated 0 bytes in 3 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 0)
+fetching matrix...
+Traceback (most recent call last):
+  File "wsgi.py", line 30, in application
+    response = VRPService(data).get_response()
+  File "./app.py", line 21, in __init__
+    len(ordered_locations)
+  File "./app.py", line 42, in json_response
+    locations.copy()
+  File "./gmaps.py", line 39, in get_matrix
+    json_data = self.get_json_response()
+  File "./gmaps.py", line 28, in get_json_response
+    destinations=self.destination_locations
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 365, in wrapper
+    result = func(*args, **kwargs)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/distance_matrix.py", line 94, in distance_matrix
+    "origins": convert.location_list(origins),
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/convert.py", line 128, in location_list
+    return "|".join([latlng(location) for location in as_list(arg)])
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/convert.py", line 128, in <listcomp>
+    return "|".join([latlng(location) for location in as_list(arg)])
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/convert.py", line 79, in latlng
+    normalized = normalize_lat_lng(arg)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/convert.py", line 107, in normalize_lat_lng
+    "but got %s" % type(arg).__name__)
+TypeError: Expected a lat/lng dict or tuple, but got float
+[pid: 11790|app: 0|req: 14/19] 196.188.127.103 () {36 vars in 485 bytes} [Wed Sep  5 12:28:12 2018] POST /api => generated 0 bytes in 1 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 1)
+fetching matrix...
+Traceback (most recent call last):
+  File "wsgi.py", line 30, in application
+    response = VRPService(data).get_response()
+  File "./app.py", line 21, in __init__
+    len(ordered_locations)
+  File "./app.py", line 42, in json_response
+    locations.copy()
+  File "./gmaps.py", line 39, in get_matrix
+    json_data = self.get_json_response()
+  File "./gmaps.py", line 28, in get_json_response
+    destinations=self.destination_locations
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 365, in wrapper
+    result = func(*args, **kwargs)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/distance_matrix.py", line 94, in distance_matrix
+    "origins": convert.location_list(origins),
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/convert.py", line 128, in location_list
+    return "|".join([latlng(location) for location in as_list(arg)])
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/convert.py", line 128, in <listcomp>
+    return "|".join([latlng(location) for location in as_list(arg)])
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/convert.py", line 79, in latlng
+    normalized = normalize_lat_lng(arg)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/convert.py", line 107, in normalize_lat_lng
+    "but got %s" % type(arg).__name__)
+TypeError: Expected a lat/lng dict or tuple, but got float
+[pid: 11790|app: 0|req: 15/20] 196.188.127.103 () {36 vars in 485 bytes} [Wed Sep  5 12:28:49 2018] POST /api => generated 0 bytes in 1 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 0)
+fetching matrix...
+Traceback (most recent call last):
+  File "wsgi.py", line 30, in application
+    response = VRPService(data).get_response()
+  File "./app.py", line 21, in __init__
+    len(ordered_locations)
+  File "./app.py", line 42, in json_response
+    locations.copy()
+  File "./gmaps.py", line 39, in get_matrix
+    json_data = self.get_json_response()
+  File "./gmaps.py", line 28, in get_json_response
+    destinations=self.destination_locations
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 365, in wrapper
+    result = func(*args, **kwargs)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/distance_matrix.py", line 94, in distance_matrix
+    "origins": convert.location_list(origins),
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/convert.py", line 128, in location_list
+    return "|".join([latlng(location) for location in as_list(arg)])
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/convert.py", line 128, in <listcomp>
+    return "|".join([latlng(location) for location in as_list(arg)])
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/convert.py", line 79, in latlng
+    normalized = normalize_lat_lng(arg)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/convert.py", line 107, in normalize_lat_lng
+    "but got %s" % type(arg).__name__)
+TypeError: Expected a lat/lng dict or tuple, but got float
+[pid: 11790|app: 0|req: 16/21] 196.188.127.103 () {36 vars in 485 bytes} [Wed Sep  5 12:29:01 2018] POST /api => generated 0 bytes in 1 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 1)
+fetching matrix...
+Traceback (most recent call last):
+  File "wsgi.py", line 30, in application
+    response = VRPService(data).get_response()
+  File "./app.py", line 21, in __init__
+    len(ordered_locations)
+  File "./app.py", line 42, in json_response
+    locations.copy()
+  File "./gmaps.py", line 39, in get_matrix
+    json_data = self.get_json_response()
+  File "./gmaps.py", line 28, in get_json_response
+    destinations=self.destination_locations
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 365, in wrapper
+    result = func(*args, **kwargs)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/distance_matrix.py", line 94, in distance_matrix
+    "origins": convert.location_list(origins),
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/convert.py", line 128, in location_list
+    return "|".join([latlng(location) for location in as_list(arg)])
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/convert.py", line 128, in <listcomp>
+    return "|".join([latlng(location) for location in as_list(arg)])
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/convert.py", line 79, in latlng
+    normalized = normalize_lat_lng(arg)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/convert.py", line 107, in normalize_lat_lng
+    "but got %s" % type(arg).__name__)
+TypeError: Expected a lat/lng dict or tuple, but got float
+[pid: 11790|app: 0|req: 17/22] 196.188.127.103 () {36 vars in 485 bytes} [Wed Sep  5 12:29:20 2018] POST /api => generated 0 bytes in 1 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 0)
+fetching matrix...
+Traceback (most recent call last):
+  File "wsgi.py", line 30, in application
+    response = VRPService(data).get_response()
+  File "./app.py", line 21, in __init__
+    len(ordered_locations)
+  File "./app.py", line 42, in json_response
+    locations.copy()
+  File "./gmaps.py", line 39, in get_matrix
+    json_data = self.get_json_response()
+  File "./gmaps.py", line 28, in get_json_response
+    destinations=self.destination_locations
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 365, in wrapper
+    result = func(*args, **kwargs)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/distance_matrix.py", line 94, in distance_matrix
+    "origins": convert.location_list(origins),
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/convert.py", line 128, in location_list
+    return "|".join([latlng(location) for location in as_list(arg)])
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/convert.py", line 128, in <listcomp>
+    return "|".join([latlng(location) for location in as_list(arg)])
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/convert.py", line 79, in latlng
+    normalized = normalize_lat_lng(arg)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/convert.py", line 107, in normalize_lat_lng
+    "but got %s" % type(arg).__name__)
+TypeError: Expected a lat/lng dict or tuple, but got float
+[pid: 11790|app: 0|req: 18/23] 196.188.127.103 () {36 vars in 485 bytes} [Wed Sep  5 12:29:47 2018] POST /api => generated 0 bytes in 1 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 1)
+fetching matrix...
+Traceback (most recent call last):
+  File "wsgi.py", line 30, in application
+    response = VRPService(data).get_response()
+  File "./app.py", line 21, in __init__
+    len(ordered_locations)
+  File "./app.py", line 42, in json_response
+    locations.copy()
+  File "./gmaps.py", line 39, in get_matrix
+    json_data = self.get_json_response()
+  File "./gmaps.py", line 28, in get_json_response
+    destinations=self.destination_locations
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 365, in wrapper
+    result = func(*args, **kwargs)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/distance_matrix.py", line 138, in distance_matrix
+    return client._request("/maps/api/distancematrix/json", params)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 260, in _request
+    result = self._get_body(response)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 290, in _get_body
+    body.get("error_message"))
+googlemaps.exceptions.ApiError: MAX_ELEMENTS_EXCEEDED
+[pid: 11790|app: 0|req: 19/24] 196.188.127.103 () {36 vars in 485 bytes} [Wed Sep  5 12:31:15 2018] POST /api => generated 0 bytes in 88 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 0)
+fetching matrix...
+{'destination_addresses': ['Bedesta Bulding, Addis Ababa, Ethiopia', 'Lideta, Addis Ababa, Ethiopia', 'Addis Ketema, Addis Ababa, Ethiopia', "Côte D'Ivoire St, አዲስ አበባ, Ethiopia", 'Urael, Addis Ababa, Ethiopia'], 'origin_addresses': ['Bedesta Bulding, Addis Ababa, Ethiopia', 'Lideta, Addis Ababa, Ethiopia', 'Addis Ketema, Addis Ababa, Ethiopia', "Côte D'Ivoire St, አዲስ አበባ, Ethiopia", 'Urael, Addis Ababa, Ethiopia'], 'rows': [{'elements': [{'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '4.4 km', 'value': 4441}, 'duration': {'text': '12 mins', 'value': 710}, 'status': 'OK'}, {'distance': {'text': '6.1 km', 'value': 6127}, 'duration': {'text': '17 mins', 'value': 998}, 'status': 'OK'}, {'distance': {'text': '4.3 km', 'value': 4261}, 'duration': {'text': '10 mins', 'value': 576}, 'status': 'OK'}, {'distance': {'text': '3.7 km', 'value': 3652}, 'duration': {'text': '9 mins', 'value': 524}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '3.7 km', 'value': 3675}, 'duration': {'text': '11 mins', 'value': 644}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '3.8 km', 'value': 3791}, 'duration': {'text': '10 mins', 'value': 613}, 'status': 'OK'}, {'distance': {'text': '6.8 km', 'value': 6830}, 'duration': {'text': '17 mins', 'value': 1024}, 'status': 'OK'}, {'distance': {'text': '6.6 km', 'value': 6637}, 'duration': {'text': '16 mins', 'value': 979}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '6.6 km', 'value': 6565}, 'duration': {'text': '17 mins', 'value': 1035}, 'status': 'OK'}, {'distance': {'text': '3.3 km', 'value': 3287}, 'duration': {'text': '9 mins', 'value': 511}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '7.1 km', 'value': 7143}, 'duration': {'text': '20 mins', 'value': 1224}, 'status': 'OK'}, {'distance': {'text': '9.5 km', 'value': 9527}, 'duration': {'text': '23 mins', 'value': 1371}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '4.0 km', 'value': 4014}, 'duration': {'text': '11 mins', 'value': 634}, 'status': 'OK'}, {'distance': {'text': '6.7 km', 'value': 6706}, 'duration': {'text': '18 mins', 'value': 1065}, 'status': 'OK'}, {'distance': {'text': '6.3 km', 'value': 6337}, 'duration': {'text': '20 mins', 'value': 1179}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '3.8 km', 'value': 3808}, 'duration': {'text': '12 mins', 'value': 728}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '2.9 km', 'value': 2910}, 'duration': {'text': '7 mins', 'value': 413}, 'status': 'OK'}, {'distance': {'text': '7.3 km', 'value': 7339}, 'duration': {'text': '18 mins', 'value': 1052}, 'status': 'OK'}, {'distance': {'text': '9.0 km', 'value': 9025}, 'duration': {'text': '22 mins', 'value': 1339}, 'status': 'OK'}, {'distance': {'text': '3.9 km', 'value': 3891}, 'duration': {'text': '11 mins', 'value': 640}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}]}], 'status': 'OK'}
+done.
+solving...
+Done.
+[pid: 11790|app: 0|req: 20/25] 196.188.127.103 () {36 vars in 485 bytes} [Wed Sep  5 12:31:40 2018] POST /api => generated 208 bytes in 189 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 1)
+fetching matrix...
+{'destination_addresses': ['Bedesta Bulding, Addis Ababa, Ethiopia', 'Lideta, Addis Ababa, Ethiopia', 'Addis Ketema, Addis Ababa, Ethiopia', "Côte D'Ivoire St, አዲስ አበባ, Ethiopia", 'Urael, Addis Ababa, Ethiopia', 'Seychelles St, አዲስ አበባ, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia'], 'origin_addresses': ['Bedesta Bulding, Addis Ababa, Ethiopia', 'Lideta, Addis Ababa, Ethiopia', 'Addis Ketema, Addis Ababa, Ethiopia', "Côte D'Ivoire St, አዲስ አበባ, Ethiopia", 'Urael, Addis Ababa, Ethiopia', 'Seychelles St, አዲስ አበባ, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia'], 'rows': [{'elements': [{'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '4.4 km', 'value': 4441}, 'duration': {'text': '12 mins', 'value': 710}, 'status': 'OK'}, {'distance': {'text': '6.1 km', 'value': 6127}, 'duration': {'text': '17 mins', 'value': 998}, 'status': 'OK'}, {'distance': {'text': '4.3 km', 'value': 4261}, 'duration': {'text': '10 mins', 'value': 576}, 'status': 'OK'}, {'distance': {'text': '3.7 km', 'value': 3652}, 'duration': {'text': '9 mins', 'value': 524}, 'status': 'OK'}, {'distance': {'text': '5.5 km', 'value': 5464}, 'duration': {'text': '14 mins', 'value': 855}, 'status': 'OK'}, {'distance': {'text': '7.4 km', 'value': 7441}, 'duration': {'text': '22 mins', 'value': 1312}, 'status': 'OK'}, {'distance': {'text': '7.4 km', 'value': 7430}, 'duration': {'text': '18 mins', 'value': 1055}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '3.7 km', 'value': 3675}, 'duration': {'text': '11 mins', 'value': 644}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '3.8 km', 'value': 3791}, 'duration': {'text': '10 mins', 'value': 613}, 'status': 'OK'}, {'distance': {'text': '6.8 km', 'value': 6830}, 'duration': {'text': '17 mins', 'value': 1024}, 'status': 'OK'}, {'distance': {'text': '6.6 km', 'value': 6637}, 'duration': {'text': '16 mins', 'value': 979}, 'status': 'OK'}, {'distance': {'text': '2.9 km', 'value': 2874}, 'duration': {'text': '7 mins', 'value': 426}, 'status': 'OK'}, {'distance': {'text': '5.1 km', 'value': 5104}, 'duration': {'text': '15 mins', 'value': 927}, 'status': 'OK'}, {'distance': {'text': '10.0 km', 'value': 9999}, 'duration': {'text': '25 mins', 'value': 1503}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '6.6 km', 'value': 6565}, 'duration': {'text': '17 mins', 'value': 1035}, 'status': 'OK'}, {'distance': {'text': '3.3 km', 'value': 3287}, 'duration': {'text': '9 mins', 'value': 511}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '7.1 km', 'value': 7143}, 'duration': {'text': '20 mins', 'value': 1224}, 'status': 'OK'}, {'distance': {'text': '9.5 km', 'value': 9527}, 'duration': {'text': '23 mins', 'value': 1371}, 'status': 'OK'}, {'distance': {'text': '4.1 km', 'value': 4132}, 'duration': {'text': '10 mins', 'value': 586}, 'status': 'OK'}, {'distance': {'text': '1.3 km', 'value': 1311}, 'duration': {'text': '6 mins', 'value': 384}, 'status': 'OK'}, {'distance': {'text': '12.9 km', 'value': 12889}, 'duration': {'text': '32 mins', 'value': 1894}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '4.0 km', 'value': 4014}, 'duration': {'text': '11 mins', 'value': 634}, 'status': 'OK'}, {'distance': {'text': '6.7 km', 'value': 6706}, 'duration': {'text': '18 mins', 'value': 1065}, 'status': 'OK'}, {'distance': {'text': '6.3 km', 'value': 6337}, 'duration': {'text': '20 mins', 'value': 1179}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '3.8 km', 'value': 3808}, 'duration': {'text': '12 mins', 'value': 728}, 'status': 'OK'}, {'distance': {'text': '7.7 km', 'value': 7728}, 'duration': {'text': '20 mins', 'value': 1210}, 'status': 'OK'}, {'distance': {'text': '7.6 km', 'value': 7650}, 'duration': {'text': '25 mins', 'value': 1493}, 'status': 'OK'}, {'distance': {'text': '6.3 km', 'value': 6280}, 'duration': {'text': '17 mins', 'value': 1013}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '2.9 km', 'value': 2910}, 'duration': {'text': '7 mins', 'value': 413}, 'status': 'OK'}, {'distance': {'text': '7.3 km', 'value': 7339}, 'duration': {'text': '18 mins', 'value': 1052}, 'status': 'OK'}, {'distance': {'text': '9.0 km', 'value': 9025}, 'duration': {'text': '22 mins', 'value': 1339}, 'status': 'OK'}, {'distance': {'text': '3.9 km', 'value': 3891}, 'duration': {'text': '11 mins', 'value': 640}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '7.4 km', 'value': 7437}, 'duration': {'text': '19 mins', 'value': 1159}, 'status': 'OK'}, {'distance': {'text': '10.3 km', 'value': 10338}, 'duration': {'text': '28 mins', 'value': 1654}, 'status': 'OK'}, {'distance': {'text': '4.7 km', 'value': 4745}, 'duration': {'text': '16 mins', 'value': 968}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '6.0 km', 'value': 5959}, 'duration': {'text': '15 mins', 'value': 928}, 'status': 'OK'}, {'distance': {'text': '3.3 km', 'value': 3342}, 'duration': {'text': '7 mins', 'value': 446}, 'status': 'OK'}, {'distance': {'text': '4.4 km', 'value': 4384}, 'duration': {'text': '11 mins', 'value': 662}, 'status': 'OK'}, {'distance': {'text': '9.1 km', 'value': 9114}, 'duration': {'text': '22 mins', 'value': 1308}, 'status': 'OK'}, {'distance': {'text': '7.8 km', 'value': 7815}, 'duration': {'text': '19 mins', 'value': 1146}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '5.7 km', 'value': 5697}, 'duration': {'text': '16 mins', 'value': 977}, 'status': 'OK'}, {'distance': {'text': '11.3 km', 'value': 11319}, 'duration': {'text': '28 mins', 'value': 1671}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '8.1 km', 'value': 8094}, 'duration': {'text': '23 mins', 'value': 1367}, 'status': 'OK'}, {'distance': {'text': '4.8 km', 'value': 4815}, 'duration': {'text': '14 mins', 'value': 843}, 'status': 'OK'}, {'distance': {'text': '1.5 km', 'value': 1530}, 'duration': {'text': '6 mins', 'value': 359}, 'status': 'OK'}, {'distance': {'text': '8.7 km', 'value': 8672}, 'duration': {'text': '26 mins', 'value': 1556}, 'status': 'OK'}, {'distance': {'text': '11.1 km', 'value': 11056}, 'duration': {'text': '28 mins', 'value': 1703}, 'status': 'OK'}, {'distance': {'text': '5.7 km', 'value': 5660}, 'duration': {'text': '15 mins', 'value': 918}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '14.4 km', 'value': 14418}, 'duration': {'text': '37 mins', 'value': 2226}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '6.8 km', 'value': 6765}, 'duration': {'text': '18 mins', 'value': 1106}, 'status': 'OK'}, {'distance': {'text': '11.2 km', 'value': 11177}, 'duration': {'text': '27 mins', 'value': 1608}, 'status': 'OK'}, {'distance': {'text': '12.9 km', 'value': 12863}, 'duration': {'text': '32 mins', 'value': 1895}, 'status': 'OK'}, {'distance': {'text': '6.3 km', 'value': 6301}, 'duration': {'text': '17 mins', 'value': 1004}, 'status': 'OK'}, {'distance': {'text': '4.9 km', 'value': 4896}, 'duration': {'text': '16 mins', 'value': 969}, 'status': 'OK'}, {'distance': {'text': '11.4 km', 'value': 11411}, 'duration': {'text': '28 mins', 'value': 1706}, 'status': 'OK'}, {'distance': {'text': '14.2 km', 'value': 14176}, 'duration': {'text': '37 mins', 'value': 2209}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}]}], 'status': 'OK'}
+done.
+solving...
+Done.
+[pid: 11789|app: 0|req: 6/26] 196.188.127.103 () {36 vars in 485 bytes} [Wed Sep  5 12:32:10 2018] POST /api => generated 218 bytes in 181 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 1)
+fetching matrix...
+Traceback (most recent call last):
+  File "wsgi.py", line 30, in application
+    response = VRPService(data).get_response()
+  File "./app.py", line 21, in __init__
+    len(ordered_locations)
+  File "./app.py", line 42, in json_response
+    locations.copy()
+  File "./gmaps.py", line 39, in get_matrix
+    json_data = self.get_json_response()
+  File "./gmaps.py", line 28, in get_json_response
+    destinations=self.destination_locations
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 365, in wrapper
+    result = func(*args, **kwargs)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/distance_matrix.py", line 138, in distance_matrix
+    return client._request("/maps/api/distancematrix/json", params)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 260, in _request
+    result = self._get_body(response)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 290, in _get_body
+    body.get("error_message"))
+googlemaps.exceptions.ApiError: MAX_ELEMENTS_EXCEEDED
+[pid: 11790|app: 0|req: 21/27] 196.188.127.103 () {36 vars in 485 bytes} [Wed Sep  5 12:33:19 2018] POST /api => generated 0 bytes in 71 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 0)
+fetching matrix...
+{'destination_addresses': ['Bedesta Bulding, Addis Ababa, Ethiopia', 'Lideta, Addis Ababa, Ethiopia', 'Addis Ketema, Addis Ababa, Ethiopia', "Côte D'Ivoire St, አዲስ አበባ, Ethiopia", 'Urael, Addis Ababa, Ethiopia', 'Seychelles St, አዲስ አበባ, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Yeka, Addis Ababa, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia'], 'origin_addresses': ['Bedesta Bulding, Addis Ababa, Ethiopia', 'Lideta, Addis Ababa, Ethiopia', 'Addis Ketema, Addis Ababa, Ethiopia', "Côte D'Ivoire St, አዲስ አበባ, Ethiopia", 'Urael, Addis Ababa, Ethiopia', 'Seychelles St, አዲስ አበባ, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Yeka, Addis Ababa, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia'], 'rows': [{'elements': [{'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '4.4 km', 'value': 4441}, 'duration': {'text': '12 mins', 'value': 710}, 'status': 'OK'}, {'distance': {'text': '6.1 km', 'value': 6127}, 'duration': {'text': '17 mins', 'value': 998}, 'status': 'OK'}, {'distance': {'text': '4.3 km', 'value': 4261}, 'duration': {'text': '10 mins', 'value': 576}, 'status': 'OK'}, {'distance': {'text': '3.7 km', 'value': 3652}, 'duration': {'text': '9 mins', 'value': 524}, 'status': 'OK'}, {'distance': {'text': '5.5 km', 'value': 5464}, 'duration': {'text': '14 mins', 'value': 855}, 'status': 'OK'}, {'distance': {'text': '7.4 km', 'value': 7441}, 'duration': {'text': '22 mins', 'value': 1312}, 'status': 'OK'}, {'distance': {'text': '7.4 km', 'value': 7430}, 'duration': {'text': '18 mins', 'value': 1055}, 'status': 'OK'}, {'distance': {'text': '4.9 km', 'value': 4901}, 'duration': {'text': '13 mins', 'value': 755}, 'status': 'OK'}, {'distance': {'text': '8.2 km', 'value': 8161}, 'duration': {'text': '23 mins', 'value': 1356}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '3.7 km', 'value': 3675}, 'duration': {'text': '11 mins', 'value': 644}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '3.8 km', 'value': 3791}, 'duration': {'text': '10 mins', 'value': 613}, 'status': 'OK'}, {'distance': {'text': '6.8 km', 'value': 6830}, 'duration': {'text': '17 mins', 'value': 1024}, 'status': 'OK'}, {'distance': {'text': '6.6 km', 'value': 6637}, 'duration': {'text': '16 mins', 'value': 979}, 'status': 'OK'}, {'distance': {'text': '2.9 km', 'value': 2874}, 'duration': {'text': '7 mins', 'value': 426}, 'status': 'OK'}, {'distance': {'text': '5.1 km', 'value': 5104}, 'duration': {'text': '15 mins', 'value': 927}, 'status': 'OK'}, {'distance': {'text': '10.0 km', 'value': 9999}, 'duration': {'text': '25 mins', 'value': 1503}, 'status': 'OK'}, {'distance': {'text': '7.5 km', 'value': 7470}, 'duration': {'text': '20 mins', 'value': 1203}, 'status': 'OK'}, {'distance': {'text': '5.4 km', 'value': 5424}, 'duration': {'text': '18 mins', 'value': 1051}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '6.6 km', 'value': 6565}, 'duration': {'text': '17 mins', 'value': 1035}, 'status': 'OK'}, {'distance': {'text': '3.3 km', 'value': 3287}, 'duration': {'text': '9 mins', 'value': 511}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '7.1 km', 'value': 7143}, 'duration': {'text': '20 mins', 'value': 1224}, 'status': 'OK'}, {'distance': {'text': '9.5 km', 'value': 9527}, 'duration': {'text': '23 mins', 'value': 1371}, 'status': 'OK'}, {'distance': {'text': '4.1 km', 'value': 4132}, 'duration': {'text': '10 mins', 'value': 586}, 'status': 'OK'}, {'distance': {'text': '1.3 km', 'value': 1311}, 'duration': {'text': '6 mins', 'value': 384}, 'status': 'OK'}, {'distance': {'text': '12.9 km', 'value': 12889}, 'duration': {'text': '32 mins', 'value': 1894}, 'status': 'OK'}, {'distance': {'text': '9.5 km', 'value': 9498}, 'duration': {'text': '24 mins', 'value': 1437}, 'status': 'OK'}, {'distance': {'text': '8.0 km', 'value': 7984}, 'duration': {'text': '23 mins', 'value': 1373}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '4.0 km', 'value': 4014}, 'duration': {'text': '11 mins', 'value': 634}, 'status': 'OK'}, {'distance': {'text': '6.7 km', 'value': 6706}, 'duration': {'text': '18 mins', 'value': 1065}, 'status': 'OK'}, {'distance': {'text': '6.3 km', 'value': 6337}, 'duration': {'text': '20 mins', 'value': 1179}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '3.8 km', 'value': 3808}, 'duration': {'text': '12 mins', 'value': 728}, 'status': 'OK'}, {'distance': {'text': '7.7 km', 'value': 7728}, 'duration': {'text': '20 mins', 'value': 1210}, 'status': 'OK'}, {'distance': {'text': '7.6 km', 'value': 7650}, 'duration': {'text': '25 mins', 'value': 1493}, 'status': 'OK'}, {'distance': {'text': '6.3 km', 'value': 6280}, 'duration': {'text': '17 mins', 'value': 1013}, 'status': 'OK'}, {'distance': {'text': '2.6 km', 'value': 2559}, 'duration': {'text': '9 mins', 'value': 563}, 'status': 'OK'}, {'distance': {'text': '10.3 km', 'value': 10278}, 'duration': {'text': '31 mins', 'value': 1836}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '2.9 km', 'value': 2910}, 'duration': {'text': '7 mins', 'value': 413}, 'status': 'OK'}, {'distance': {'text': '7.3 km', 'value': 7339}, 'duration': {'text': '18 mins', 'value': 1052}, 'status': 'OK'}, {'distance': {'text': '9.0 km', 'value': 9025}, 'duration': {'text': '22 mins', 'value': 1339}, 'status': 'OK'}, {'distance': {'text': '3.9 km', 'value': 3891}, 'duration': {'text': '11 mins', 'value': 640}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '7.4 km', 'value': 7437}, 'duration': {'text': '19 mins', 'value': 1159}, 'status': 'OK'}, {'distance': {'text': '10.3 km', 'value': 10338}, 'duration': {'text': '28 mins', 'value': 1654}, 'status': 'OK'}, {'distance': {'text': '4.7 km', 'value': 4745}, 'duration': {'text': '16 mins', 'value': 968}, 'status': 'OK'}, {'distance': {'text': '5.1 km', 'value': 5064}, 'duration': {'text': '16 mins', 'value': 934}, 'status': 'OK'}, {'distance': {'text': '7.8 km', 'value': 7824}, 'duration': {'text': '22 mins', 'value': 1328}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '6.0 km', 'value': 5959}, 'duration': {'text': '15 mins', 'value': 928}, 'status': 'OK'}, {'distance': {'text': '3.3 km', 'value': 3342}, 'duration': {'text': '7 mins', 'value': 446}, 'status': 'OK'}, {'distance': {'text': '4.4 km', 'value': 4384}, 'duration': {'text': '11 mins', 'value': 662}, 'status': 'OK'}, {'distance': {'text': '9.1 km', 'value': 9114}, 'duration': {'text': '22 mins', 'value': 1308}, 'status': 'OK'}, {'distance': {'text': '7.8 km', 'value': 7815}, 'duration': {'text': '19 mins', 'value': 1146}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '5.7 km', 'value': 5697}, 'duration': {'text': '16 mins', 'value': 977}, 'status': 'OK'}, {'distance': {'text': '11.3 km', 'value': 11319}, 'duration': {'text': '28 mins', 'value': 1671}, 'status': 'OK'}, {'distance': {'text': '9.8 km', 'value': 9754}, 'duration': {'text': '25 mins', 'value': 1487}, 'status': 'OK'}, {'distance': {'text': '3.9 km', 'value': 3916}, 'duration': {'text': '14 mins', 'value': 838}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '8.1 km', 'value': 8094}, 'duration': {'text': '23 mins', 'value': 1367}, 'status': 'OK'}, {'distance': {'text': '4.8 km', 'value': 4815}, 'duration': {'text': '14 mins', 'value': 843}, 'status': 'OK'}, {'distance': {'text': '1.5 km', 'value': 1530}, 'duration': {'text': '6 mins', 'value': 359}, 'status': 'OK'}, {'distance': {'text': '8.7 km', 'value': 8672}, 'duration': {'text': '26 mins', 'value': 1556}, 'status': 'OK'}, {'distance': {'text': '11.1 km', 'value': 11056}, 'duration': {'text': '28 mins', 'value': 1703}, 'status': 'OK'}, {'distance': {'text': '5.7 km', 'value': 5660}, 'duration': {'text': '15 mins', 'value': 918}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '14.4 km', 'value': 14418}, 'duration': {'text': '37 mins', 'value': 2226}, 'status': 'OK'}, {'distance': {'text': '11.0 km', 'value': 11027}, 'duration': {'text': '29 mins', 'value': 1769}, 'status': 'OK'}, {'distance': {'text': '12.0 km', 'value': 11969}, 'duration': {'text': '26 mins', 'value': 1538}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '6.8 km', 'value': 6765}, 'duration': {'text': '18 mins', 'value': 1106}, 'status': 'OK'}, {'distance': {'text': '11.2 km', 'value': 11177}, 'duration': {'text': '27 mins', 'value': 1608}, 'status': 'OK'}, {'distance': {'text': '12.9 km', 'value': 12863}, 'duration': {'text': '32 mins', 'value': 1895}, 'status': 'OK'}, {'distance': {'text': '6.3 km', 'value': 6301}, 'duration': {'text': '17 mins', 'value': 1004}, 'status': 'OK'}, {'distance': {'text': '4.9 km', 'value': 4896}, 'duration': {'text': '16 mins', 'value': 969}, 'status': 'OK'}, {'distance': {'text': '11.4 km', 'value': 11411}, 'duration': {'text': '28 mins', 'value': 1706}, 'status': 'OK'}, {'distance': {'text': '14.2 km', 'value': 14176}, 'duration': {'text': '37 mins', 'value': 2209}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '5.2 km', 'value': 5180}, 'duration': {'text': '14 mins', 'value': 831}, 'status': 'OK'}, {'distance': {'text': '11.8 km', 'value': 11798}, 'duration': {'text': '31 mins', 'value': 1875}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '6.3 km', 'value': 6275}, 'duration': {'text': '14 mins', 'value': 812}, 'status': 'OK'}, {'distance': {'text': '9.0 km', 'value': 8968}, 'duration': {'text': '21 mins', 'value': 1244}, 'status': 'OK'}, {'distance': {'text': '8.1 km', 'value': 8143}, 'duration': {'text': '22 mins', 'value': 1336}, 'status': 'OK'}, {'distance': {'text': '2.6 km', 'value': 2561}, 'duration': {'text': '7 mins', 'value': 396}, 'status': 'OK'}, {'distance': {'text': '5.5 km', 'value': 5468}, 'duration': {'text': '15 mins', 'value': 899}, 'status': 'OK'}, {'distance': {'text': '10.0 km', 'value': 9990}, 'duration': {'text': '23 mins', 'value': 1389}, 'status': 'OK'}, {'distance': {'text': '9.5 km', 'value': 9456}, 'duration': {'text': '28 mins', 'value': 1651}, 'status': 'OK'}, {'distance': {'text': '5.2 km', 'value': 5174}, 'duration': {'text': '15 mins', 'value': 907}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '13.5 km', 'value': 13454}, 'duration': {'text': '33 mins', 'value': 1957}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '7.9 km', 'value': 7934}, 'duration': {'text': '22 mins', 'value': 1347}, 'status': 'OK'}, {'distance': {'text': '5.1 km', 'value': 5117}, 'duration': {'text': '15 mins', 'value': 920}, 'status': 'OK'}, {'distance': {'text': '7.5 km', 'value': 7545}, 'duration': {'text': '20 mins', 'value': 1185}, 'status': 'OK'}, {'distance': {'text': '11.3 km', 'value': 11332}, 'duration': {'text': '29 mins', 'value': 1721}, 'status': 'OK'}, {'distance': {'text': '8.2 km', 'value': 8185}, 'duration': {'text': '23 mins', 'value': 1362}, 'status': 'OK'}, {'distance': {'text': '3.8 km', 'value': 3831}, 'duration': {'text': '11 mins', 'value': 667}, 'status': 'OK'}, {'distance': {'text': '10.0 km', 'value': 9955}, 'duration': {'text': '22 mins', 'value': 1307}, 'status': 'OK'}, {'distance': {'text': '11.7 km', 'value': 11690}, 'duration': {'text': '31 mins', 'value': 1887}, 'status': 'OK'}, {'distance': {'text': '12.0 km', 'value': 11972}, 'duration': {'text': '32 mins', 'value': 1899}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}]}], 'status': 'OK'}
+done.
+solving...
+Done.
+[pid: 11790|app: 0|req: 22/28] 196.188.127.103 () {36 vars in 485 bytes} [Wed Sep  5 12:33:51 2018] POST /api => generated 224 bytes in 188 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 1)
+fetching matrix...
+Traceback (most recent call last):
+  File "wsgi.py", line 30, in application
+    response = VRPService(data).get_response()
+  File "./app.py", line 21, in __init__
+    len(ordered_locations)
+  File "./app.py", line 42, in json_response
+    locations.copy()
+  File "./gmaps.py", line 39, in get_matrix
+    json_data = self.get_json_response()
+  File "./gmaps.py", line 28, in get_json_response
+    destinations=self.destination_locations
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 365, in wrapper
+    result = func(*args, **kwargs)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/distance_matrix.py", line 138, in distance_matrix
+    return client._request("/maps/api/distancematrix/json", params)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 260, in _request
+    result = self._get_body(response)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 290, in _get_body
+    body.get("error_message"))
+googlemaps.exceptions.ApiError: MAX_ELEMENTS_EXCEEDED
+[pid: 11790|app: 0|req: 23/29] 196.188.127.103 () {36 vars in 485 bytes} [Wed Sep  5 12:34:15 2018] POST /api => generated 0 bytes in 82 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 0)
+fetching matrix...
+Traceback (most recent call last):
+  File "wsgi.py", line 30, in application
+    response = VRPService(data).get_response()
+  File "./app.py", line 21, in __init__
+    len(ordered_locations)
+  File "./app.py", line 42, in json_response
+    locations.copy()
+  File "./gmaps.py", line 39, in get_matrix
+    json_data = self.get_json_response()
+  File "./gmaps.py", line 28, in get_json_response
+    destinations=self.destination_locations
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 365, in wrapper
+    result = func(*args, **kwargs)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/distance_matrix.py", line 138, in distance_matrix
+    return client._request("/maps/api/distancematrix/json", params)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 260, in _request
+    result = self._get_body(response)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 290, in _get_body
+    body.get("error_message"))
+googlemaps.exceptions.ApiError: MAX_ELEMENTS_EXCEEDED
+[pid: 11790|app: 0|req: 24/30] 196.188.127.103 () {36 vars in 485 bytes} [Wed Sep  5 12:34:27 2018] POST /api => generated 0 bytes in 80 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 1)
+fetching matrix...
+Traceback (most recent call last):
+  File "wsgi.py", line 30, in application
+    response = VRPService(data).get_response()
+  File "./app.py", line 21, in __init__
+    len(ordered_locations)
+  File "./app.py", line 42, in json_response
+    locations.copy()
+  File "./gmaps.py", line 39, in get_matrix
+    json_data = self.get_json_response()
+  File "./gmaps.py", line 28, in get_json_response
+    destinations=self.destination_locations
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 365, in wrapper
+    result = func(*args, **kwargs)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/distance_matrix.py", line 138, in distance_matrix
+    return client._request("/maps/api/distancematrix/json", params)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 260, in _request
+    result = self._get_body(response)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 290, in _get_body
+    body.get("error_message"))
+googlemaps.exceptions.ApiError: MAX_ELEMENTS_EXCEEDED
+[pid: 11789|app: 0|req: 7/31] 196.188.127.103 () {36 vars in 485 bytes} [Wed Sep  5 12:41:24 2018] POST /api => generated 0 bytes in 70 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 0)
+fetching matrix...
+{'destination_addresses': ['Bedesta Bulding, Addis Ababa, Ethiopia', 'Lideta, Addis Ababa, Ethiopia', 'Addis Ketema, Addis Ababa, Ethiopia', "Côte D'Ivoire St, አዲስ አበባ, Ethiopia", 'Urael, Addis Ababa, Ethiopia', 'Seychelles St, አዲስ አበባ, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Yeka, Addis Ababa, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia'], 'origin_addresses': ['Bedesta Bulding, Addis Ababa, Ethiopia', 'Lideta, Addis Ababa, Ethiopia', 'Addis Ketema, Addis Ababa, Ethiopia', "Côte D'Ivoire St, አዲስ አበባ, Ethiopia", 'Urael, Addis Ababa, Ethiopia', 'Seychelles St, አዲስ አበባ, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Yeka, Addis Ababa, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia'], 'rows': [{'elements': [{'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '4.4 km', 'value': 4441}, 'duration': {'text': '12 mins', 'value': 710}, 'status': 'OK'}, {'distance': {'text': '6.1 km', 'value': 6127}, 'duration': {'text': '17 mins', 'value': 998}, 'status': 'OK'}, {'distance': {'text': '4.3 km', 'value': 4261}, 'duration': {'text': '10 mins', 'value': 576}, 'status': 'OK'}, {'distance': {'text': '3.7 km', 'value': 3652}, 'duration': {'text': '9 mins', 'value': 524}, 'status': 'OK'}, {'distance': {'text': '5.5 km', 'value': 5464}, 'duration': {'text': '14 mins', 'value': 855}, 'status': 'OK'}, {'distance': {'text': '7.4 km', 'value': 7441}, 'duration': {'text': '22 mins', 'value': 1312}, 'status': 'OK'}, {'distance': {'text': '7.4 km', 'value': 7430}, 'duration': {'text': '18 mins', 'value': 1055}, 'status': 'OK'}, {'distance': {'text': '4.9 km', 'value': 4901}, 'duration': {'text': '13 mins', 'value': 755}, 'status': 'OK'}, {'distance': {'text': '8.2 km', 'value': 8161}, 'duration': {'text': '23 mins', 'value': 1356}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '3.7 km', 'value': 3675}, 'duration': {'text': '11 mins', 'value': 644}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '3.8 km', 'value': 3791}, 'duration': {'text': '10 mins', 'value': 613}, 'status': 'OK'}, {'distance': {'text': '6.8 km', 'value': 6830}, 'duration': {'text': '17 mins', 'value': 1024}, 'status': 'OK'}, {'distance': {'text': '6.6 km', 'value': 6637}, 'duration': {'text': '16 mins', 'value': 979}, 'status': 'OK'}, {'distance': {'text': '2.9 km', 'value': 2874}, 'duration': {'text': '7 mins', 'value': 426}, 'status': 'OK'}, {'distance': {'text': '5.1 km', 'value': 5104}, 'duration': {'text': '15 mins', 'value': 927}, 'status': 'OK'}, {'distance': {'text': '10.0 km', 'value': 9999}, 'duration': {'text': '25 mins', 'value': 1503}, 'status': 'OK'}, {'distance': {'text': '7.5 km', 'value': 7470}, 'duration': {'text': '20 mins', 'value': 1203}, 'status': 'OK'}, {'distance': {'text': '5.4 km', 'value': 5424}, 'duration': {'text': '18 mins', 'value': 1051}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '6.6 km', 'value': 6565}, 'duration': {'text': '17 mins', 'value': 1035}, 'status': 'OK'}, {'distance': {'text': '3.3 km', 'value': 3287}, 'duration': {'text': '9 mins', 'value': 511}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '7.1 km', 'value': 7143}, 'duration': {'text': '20 mins', 'value': 1224}, 'status': 'OK'}, {'distance': {'text': '9.5 km', 'value': 9527}, 'duration': {'text': '23 mins', 'value': 1371}, 'status': 'OK'}, {'distance': {'text': '4.1 km', 'value': 4132}, 'duration': {'text': '10 mins', 'value': 586}, 'status': 'OK'}, {'distance': {'text': '1.3 km', 'value': 1311}, 'duration': {'text': '6 mins', 'value': 384}, 'status': 'OK'}, {'distance': {'text': '12.9 km', 'value': 12889}, 'duration': {'text': '32 mins', 'value': 1894}, 'status': 'OK'}, {'distance': {'text': '9.5 km', 'value': 9498}, 'duration': {'text': '24 mins', 'value': 1437}, 'status': 'OK'}, {'distance': {'text': '8.0 km', 'value': 7984}, 'duration': {'text': '23 mins', 'value': 1373}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '4.0 km', 'value': 4014}, 'duration': {'text': '11 mins', 'value': 634}, 'status': 'OK'}, {'distance': {'text': '6.7 km', 'value': 6706}, 'duration': {'text': '18 mins', 'value': 1065}, 'status': 'OK'}, {'distance': {'text': '6.3 km', 'value': 6337}, 'duration': {'text': '20 mins', 'value': 1179}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '3.8 km', 'value': 3808}, 'duration': {'text': '12 mins', 'value': 728}, 'status': 'OK'}, {'distance': {'text': '7.7 km', 'value': 7728}, 'duration': {'text': '20 mins', 'value': 1210}, 'status': 'OK'}, {'distance': {'text': '7.6 km', 'value': 7650}, 'duration': {'text': '25 mins', 'value': 1493}, 'status': 'OK'}, {'distance': {'text': '6.3 km', 'value': 6280}, 'duration': {'text': '17 mins', 'value': 1013}, 'status': 'OK'}, {'distance': {'text': '2.6 km', 'value': 2559}, 'duration': {'text': '9 mins', 'value': 563}, 'status': 'OK'}, {'distance': {'text': '10.3 km', 'value': 10278}, 'duration': {'text': '31 mins', 'value': 1836}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '2.9 km', 'value': 2910}, 'duration': {'text': '7 mins', 'value': 413}, 'status': 'OK'}, {'distance': {'text': '7.3 km', 'value': 7339}, 'duration': {'text': '18 mins', 'value': 1052}, 'status': 'OK'}, {'distance': {'text': '9.0 km', 'value': 9025}, 'duration': {'text': '22 mins', 'value': 1339}, 'status': 'OK'}, {'distance': {'text': '3.9 km', 'value': 3891}, 'duration': {'text': '11 mins', 'value': 640}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '7.4 km', 'value': 7437}, 'duration': {'text': '19 mins', 'value': 1159}, 'status': 'OK'}, {'distance': {'text': '10.3 km', 'value': 10338}, 'duration': {'text': '28 mins', 'value': 1654}, 'status': 'OK'}, {'distance': {'text': '4.7 km', 'value': 4745}, 'duration': {'text': '16 mins', 'value': 968}, 'status': 'OK'}, {'distance': {'text': '5.1 km', 'value': 5064}, 'duration': {'text': '16 mins', 'value': 934}, 'status': 'OK'}, {'distance': {'text': '7.8 km', 'value': 7824}, 'duration': {'text': '22 mins', 'value': 1328}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '6.0 km', 'value': 5959}, 'duration': {'text': '15 mins', 'value': 928}, 'status': 'OK'}, {'distance': {'text': '3.3 km', 'value': 3342}, 'duration': {'text': '7 mins', 'value': 446}, 'status': 'OK'}, {'distance': {'text': '4.4 km', 'value': 4384}, 'duration': {'text': '11 mins', 'value': 662}, 'status': 'OK'}, {'distance': {'text': '9.1 km', 'value': 9114}, 'duration': {'text': '22 mins', 'value': 1308}, 'status': 'OK'}, {'distance': {'text': '7.8 km', 'value': 7815}, 'duration': {'text': '19 mins', 'value': 1146}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '5.7 km', 'value': 5697}, 'duration': {'text': '16 mins', 'value': 977}, 'status': 'OK'}, {'distance': {'text': '11.3 km', 'value': 11319}, 'duration': {'text': '28 mins', 'value': 1671}, 'status': 'OK'}, {'distance': {'text': '9.8 km', 'value': 9754}, 'duration': {'text': '25 mins', 'value': 1487}, 'status': 'OK'}, {'distance': {'text': '3.9 km', 'value': 3916}, 'duration': {'text': '14 mins', 'value': 838}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '8.1 km', 'value': 8094}, 'duration': {'text': '23 mins', 'value': 1367}, 'status': 'OK'}, {'distance': {'text': '4.8 km', 'value': 4815}, 'duration': {'text': '14 mins', 'value': 843}, 'status': 'OK'}, {'distance': {'text': '1.5 km', 'value': 1530}, 'duration': {'text': '6 mins', 'value': 359}, 'status': 'OK'}, {'distance': {'text': '8.7 km', 'value': 8672}, 'duration': {'text': '26 mins', 'value': 1556}, 'status': 'OK'}, {'distance': {'text': '11.1 km', 'value': 11056}, 'duration': {'text': '28 mins', 'value': 1703}, 'status': 'OK'}, {'distance': {'text': '5.7 km', 'value': 5660}, 'duration': {'text': '15 mins', 'value': 918}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '14.4 km', 'value': 14418}, 'duration': {'text': '37 mins', 'value': 2226}, 'status': 'OK'}, {'distance': {'text': '11.0 km', 'value': 11027}, 'duration': {'text': '29 mins', 'value': 1769}, 'status': 'OK'}, {'distance': {'text': '12.0 km', 'value': 11969}, 'duration': {'text': '26 mins', 'value': 1538}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '6.8 km', 'value': 6765}, 'duration': {'text': '18 mins', 'value': 1106}, 'status': 'OK'}, {'distance': {'text': '11.2 km', 'value': 11177}, 'duration': {'text': '27 mins', 'value': 1608}, 'status': 'OK'}, {'distance': {'text': '12.9 km', 'value': 12863}, 'duration': {'text': '32 mins', 'value': 1895}, 'status': 'OK'}, {'distance': {'text': '6.3 km', 'value': 6301}, 'duration': {'text': '17 mins', 'value': 1004}, 'status': 'OK'}, {'distance': {'text': '4.9 km', 'value': 4896}, 'duration': {'text': '16 mins', 'value': 969}, 'status': 'OK'}, {'distance': {'text': '11.4 km', 'value': 11411}, 'duration': {'text': '28 mins', 'value': 1706}, 'status': 'OK'}, {'distance': {'text': '14.2 km', 'value': 14176}, 'duration': {'text': '37 mins', 'value': 2209}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '5.2 km', 'value': 5180}, 'duration': {'text': '14 mins', 'value': 831}, 'status': 'OK'}, {'distance': {'text': '11.8 km', 'value': 11798}, 'duration': {'text': '31 mins', 'value': 1875}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '6.3 km', 'value': 6275}, 'duration': {'text': '14 mins', 'value': 812}, 'status': 'OK'}, {'distance': {'text': '9.0 km', 'value': 8968}, 'duration': {'text': '21 mins', 'value': 1244}, 'status': 'OK'}, {'distance': {'text': '8.1 km', 'value': 8143}, 'duration': {'text': '22 mins', 'value': 1336}, 'status': 'OK'}, {'distance': {'text': '2.6 km', 'value': 2561}, 'duration': {'text': '7 mins', 'value': 396}, 'status': 'OK'}, {'distance': {'text': '5.5 km', 'value': 5468}, 'duration': {'text': '15 mins', 'value': 899}, 'status': 'OK'}, {'distance': {'text': '10.0 km', 'value': 9990}, 'duration': {'text': '23 mins', 'value': 1389}, 'status': 'OK'}, {'distance': {'text': '9.5 km', 'value': 9456}, 'duration': {'text': '28 mins', 'value': 1651}, 'status': 'OK'}, {'distance': {'text': '5.2 km', 'value': 5174}, 'duration': {'text': '15 mins', 'value': 907}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '13.5 km', 'value': 13454}, 'duration': {'text': '33 mins', 'value': 1957}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '7.9 km', 'value': 7934}, 'duration': {'text': '22 mins', 'value': 1347}, 'status': 'OK'}, {'distance': {'text': '5.1 km', 'value': 5117}, 'duration': {'text': '15 mins', 'value': 920}, 'status': 'OK'}, {'distance': {'text': '7.5 km', 'value': 7545}, 'duration': {'text': '20 mins', 'value': 1185}, 'status': 'OK'}, {'distance': {'text': '11.3 km', 'value': 11332}, 'duration': {'text': '29 mins', 'value': 1721}, 'status': 'OK'}, {'distance': {'text': '8.2 km', 'value': 8185}, 'duration': {'text': '23 mins', 'value': 1362}, 'status': 'OK'}, {'distance': {'text': '3.8 km', 'value': 3831}, 'duration': {'text': '11 mins', 'value': 667}, 'status': 'OK'}, {'distance': {'text': '10.0 km', 'value': 9955}, 'duration': {'text': '22 mins', 'value': 1307}, 'status': 'OK'}, {'distance': {'text': '11.7 km', 'value': 11690}, 'duration': {'text': '31 mins', 'value': 1887}, 'status': 'OK'}, {'distance': {'text': '12.0 km', 'value': 11972}, 'duration': {'text': '32 mins', 'value': 1899}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}]}], 'status': 'OK'}
+done.
+solving...
+Done.
+[pid: 11790|app: 0|req: 25/32] 196.188.127.103 () {36 vars in 485 bytes} [Wed Sep  5 12:41:48 2018] POST /api => generated 268 bytes in 184 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 0)
+fetching matrix...
+Traceback (most recent call last):
+  File "wsgi.py", line 30, in application
+    response = VRPService(data).get_response()
+  File "./app.py", line 21, in __init__
+    len(ordered_locations)
+  File "./app.py", line 42, in json_response
+    locations.copy()
+  File "./gmaps.py", line 39, in get_matrix
+    json_data = self.get_json_response()
+  File "./gmaps.py", line 28, in get_json_response
+    destinations=self.destination_locations
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 365, in wrapper
+    result = func(*args, **kwargs)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/distance_matrix.py", line 138, in distance_matrix
+    return client._request("/maps/api/distancematrix/json", params)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 260, in _request
+    result = self._get_body(response)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 290, in _get_body
+    body.get("error_message"))
+googlemaps.exceptions.ApiError: MAX_ELEMENTS_EXCEEDED
+[pid: 11790|app: 0|req: 26/33] 196.188.127.103 () {36 vars in 485 bytes} [Wed Sep  5 12:42:16 2018] POST /api => generated 0 bytes in 109 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+!!! uWSGI process 11790 got Segmentation Fault !!!
+*** backtrace of 11790 ***
+uwsgi(uwsgi_backtrace+0x2e) [0x463eee]
+uwsgi(uwsgi_segfault+0x21) [0x464281]
+/lib64/libc.so.6(+0x362f0) [0x7fafa8e842f0]
+/opt/rh/rh-python36/root/usr/lib64/python3.6/site-packages/google/protobuf/pyext/_message.cpython-36m-x86_64-linux-gnu.so(+0xa5bda) [0x7faf98be5bda]
+/opt/rh/rh-python36/root/usr/lib64/libpython3.6m.so.rh-python36-1.0(PyDict_Clear+0x1c9) [0x7fafa952e099]
+/opt/rh/rh-python36/root/usr/lib64/libpython3.6m.so.rh-python36-1.0(+0xdc0d9) [0x7fafa952e0d9]
+/opt/rh/rh-python36/root/usr/lib64/libpython3.6m.so.rh-python36-1.0(+0x186561) [0x7fafa95d8561]
+/opt/rh/rh-python36/root/usr/lib64/libpython3.6m.so.rh-python36-1.0(_PyGC_CollectNoFail+0x29) [0x7fafa96353d9]
+/opt/rh/rh-python36/root/usr/lib64/libpython3.6m.so.rh-python36-1.0(PyImport_Cleanup+0x2da) [0x7fafa95bb2da]
+/opt/rh/rh-python36/root/usr/lib64/libpython3.6m.so.rh-python36-1.0(Py_FinalizeEx+0x67) [0x7fafa962bf07]
+uwsgi(uwsgi_plugins_atexit+0x71) [0x4614a1]
+/lib64/libc.so.6(+0x39bd9) [0x7fafa8e87bd9]
+/lib64/libc.so.6(+0x39c27) [0x7fafa8e87c27]
+uwsgi() [0x41d8ff]
+uwsgi(end_me+0x25) [0x4614f5]
+/lib64/libpthread.so.0(+0xf6d0) [0x7fafaa0926d0]
+/lib64/libc.so.6(epoll_wait+0x33) [0x7fafa8f4d183]
+uwsgi(event_queue_wait+0x23) [0x457b33]
+uwsgi(wsgi_req_accept+0xde) [0x41b2be]
+uwsgi(simple_loop_run+0xb6) [0x460506]
+uwsgi(simple_loop+0xe) [0x46033e]
+uwsgi(uwsgi_ignition+0x192) [0x4644d2]
+uwsgi(uwsgi_worker_run+0x2ed) [0x468c4d]
+uwsgi() [0x46920f]
+uwsgi(_start+0) [0x41a78e]
+/lib64/libc.so.6(__libc_start_main+0xf5) [0x7fafa8e70445]
+uwsgi() [0x41a7b7]
+*** end of backtrace ***
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Wed Sep  5 13:44:02 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-28) on 03 September 2018 10:47:15
+os: Linux-3.10.0-862.11.6.el7.x86_64 #1 SMP Tue Aug 14 21:49:04 UTC 2018
+nodename: centos-app
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/hailemaryammecca/VehicleRoutingRESTService
+detected binary path: /opt/rh/rh-python36/root/usr/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 29211
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:7000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.3 (default, Mar 20 2018, 13:50:41)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)]
+Python main interpreter initialized at 0xc18820
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 250032 bytes (244 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xc18820 pid: 13521 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 13521)
+spawned uWSGI worker 1 (pid: 13523, cores: 2)
+writing pidfile to pid_list.txt
+spawned uWSGI worker 2 (pid: 13524, cores: 2)
+writing pidfile to pid_list.txt
+writing pidfile to pid_list.txt
+fetching matrix...
+Traceback (most recent call last):
+  File "wsgi.py", line 30, in application
+    response = VRPService(data).get_response()
+  File "./app.py", line 21, in __init__
+    len(ordered_locations)
+  File "./app.py", line 42, in json_response
+    locations.copy()
+  File "./gmaps.py", line 39, in get_matrix
+    json_data = self.get_json_response()
+  File "./gmaps.py", line 28, in get_json_response
+    destinations=self.destination_locations
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 365, in wrapper
+    result = func(*args, **kwargs)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/distance_matrix.py", line 138, in distance_matrix
+    return client._request("/maps/api/distancematrix/json", params)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 260, in _request
+    result = self._get_body(response)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 290, in _get_body
+    body.get("error_message"))
+googlemaps.exceptions.ApiError: REQUEST_DENIED (The provided API key is invalid.)
+[pid: 13524|app: 0|req: 1/1] 196.188.127.103 () {36 vars in 485 bytes} [Wed Sep  5 13:44:32 2018] POST /api => generated 0 bytes in 37 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 0)
+[pid: 13523|app: 0|req: 1/2] 127.0.0.1 () {24 vars in 252 bytes} [Wed Sep  5 13:44:34 2018] GET / => generated 49 bytes in 0 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 0)
+fetching matrix...
+Traceback (most recent call last):
+  File "wsgi.py", line 30, in application
+    response = VRPService(data).get_response()
+  File "./app.py", line 21, in __init__
+    len(ordered_locations)
+  File "./app.py", line 42, in json_response
+    locations.copy()
+  File "./gmaps.py", line 39, in get_matrix
+    json_data = self.get_json_response()
+  File "./gmaps.py", line 28, in get_json_response
+    destinations=self.destination_locations
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 365, in wrapper
+    result = func(*args, **kwargs)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/distance_matrix.py", line 138, in distance_matrix
+    return client._request("/maps/api/distancematrix/json", params)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 260, in _request
+    result = self._get_body(response)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 290, in _get_body
+    body.get("error_message"))
+googlemaps.exceptions.ApiError: REQUEST_DENIED (The provided API key is invalid.)
+[pid: 13524|app: 0|req: 2/3] 196.188.127.103 () {36 vars in 485 bytes} [Wed Sep  5 13:44:47 2018] POST /api => generated 0 bytes in 28 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 1)
+fetching matrix...
+Traceback (most recent call last):
+  File "wsgi.py", line 30, in application
+    response = VRPService(data).get_response()
+  File "./app.py", line 21, in __init__
+    len(ordered_locations)
+  File "./app.py", line 42, in json_response
+    locations.copy()
+  File "./gmaps.py", line 39, in get_matrix
+    json_data = self.get_json_response()
+  File "./gmaps.py", line 28, in get_json_response
+    destinations=self.destination_locations
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 365, in wrapper
+    result = func(*args, **kwargs)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/distance_matrix.py", line 138, in distance_matrix
+    return client._request("/maps/api/distancematrix/json", params)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 260, in _request
+    result = self._get_body(response)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 290, in _get_body
+    body.get("error_message"))
+googlemaps.exceptions.ApiError: REQUEST_DENIED (The provided API key is invalid.)
+[pid: 13523|app: 0|req: 2/4] 196.188.127.103 () {36 vars in 485 bytes} [Wed Sep  5 13:46:15 2018] POST /api => generated 0 bytes in 36 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 1)
+fetching matrix...
+Traceback (most recent call last):
+  File "wsgi.py", line 30, in application
+    response = VRPService(data).get_response()
+  File "./app.py", line 21, in __init__
+    len(ordered_locations)
+  File "./app.py", line 42, in json_response
+    locations.copy()
+  File "./gmaps.py", line 39, in get_matrix
+    json_data = self.get_json_response()
+  File "./gmaps.py", line 28, in get_json_response
+    destinations=self.destination_locations
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 365, in wrapper
+    result = func(*args, **kwargs)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/distance_matrix.py", line 138, in distance_matrix
+    return client._request("/maps/api/distancematrix/json", params)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 260, in _request
+    result = self._get_body(response)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 290, in _get_body
+    body.get("error_message"))
+googlemaps.exceptions.ApiError: REQUEST_DENIED (The provided API key is invalid.)
+[pid: 13524|app: 0|req: 3/5] 196.188.127.103 () {36 vars in 485 bytes} [Wed Sep  5 13:48:11 2018] POST /api => generated 0 bytes in 25 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 0)
+fetching matrix...
+Traceback (most recent call last):
+  File "wsgi.py", line 30, in application
+    response = VRPService(data).get_response()
+  File "./app.py", line 21, in __init__
+    len(ordered_locations)
+  File "./app.py", line 42, in json_response
+    locations.copy()
+  File "./gmaps.py", line 39, in get_matrix
+    json_data = self.get_json_response()
+  File "./gmaps.py", line 28, in get_json_response
+    destinations=self.destination_locations
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 365, in wrapper
+    result = func(*args, **kwargs)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/distance_matrix.py", line 138, in distance_matrix
+    return client._request("/maps/api/distancematrix/json", params)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 260, in _request
+    result = self._get_body(response)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 290, in _get_body
+    body.get("error_message"))
+googlemaps.exceptions.ApiError: REQUEST_DENIED (The provided API key is invalid.)
+[pid: 13524|app: 0|req: 4/6] 196.188.127.103 () {36 vars in 485 bytes} [Wed Sep  5 13:53:53 2018] POST /api => generated 0 bytes in 27 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+!!! uWSGI process 13523 got Segmentation Fault !!!
+*** backtrace of 13523 ***
+uwsgi(uwsgi_backtrace+0x2e) [0x463eee]
+uwsgi(uwsgi_segfault+0x21) [0x464281]
+/lib64/libc.so.6(+0x362f0) [0x7efe5de4a2f0]
+/opt/rh/rh-python36/root/usr/lib64/python3.6/site-packages/google/protobuf/pyext/_message.cpython-36m-x86_64-linux-gnu.so(+0xbab03) [0x7efe4dbc0b03]
+/opt/rh/rh-python36/root/usr/lib64/libpython3.6m.so.rh-python36-1.0(+0xd5a3e) [0x7efe5e4eda3e]
+/opt/rh/rh-python36/root/usr/lib64/libpython3.6m.so.rh-python36-1.0(+0xf5396) [0x7efe5e50d396]
+/opt/rh/rh-python36/root/usr/lib64/libpython3.6m.so.rh-python36-1.0(PyDict_Clear+0x1c9) [0x7efe5e4f4099]
+/opt/rh/rh-python36/root/usr/lib64/libpython3.6m.so.rh-python36-1.0(+0xdc0d9) [0x7efe5e4f40d9]
+/opt/rh/rh-python36/root/usr/lib64/libpython3.6m.so.rh-python36-1.0(+0x186561) [0x7efe5e59e561]
+/opt/rh/rh-python36/root/usr/lib64/libpython3.6m.so.rh-python36-1.0(_PyGC_CollectNoFail+0x29) [0x7efe5e5fb3d9]
+/opt/rh/rh-python36/root/usr/lib64/libpython3.6m.so.rh-python36-1.0(PyImport_Cleanup+0x155) [0x7efe5e581155]
+/opt/rh/rh-python36/root/usr/lib64/libpython3.6m.so.rh-python36-1.0(Py_FinalizeEx+0x67) [0x7efe5e5f1f07]
+uwsgi(uwsgi_plugins_atexit+0x71) [0x4614a1]
+/lib64/libc.so.6(+0x39bd9) [0x7efe5de4dbd9]
+/lib64/libc.so.6(+0x39c27) [0x7efe5de4dc27]
+uwsgi() [0x41d8ff]
+uwsgi(end_me+0x25) [0x4614f5]
+/lib64/libpthread.so.0(+0xf6d0) [0x7efe5f0586d0]
+/lib64/libc.so.6(epoll_wait+0x33) [0x7efe5df13183]
+uwsgi(event_queue_wait+0x23) [0x457b33]
+uwsgi(wsgi_req_accept+0xde) [0x41b2be]
+uwsgi(simple_loop_run+0xb6) [0x460506]
+uwsgi(simple_loop+0xe) [0x46033e]
+uwsgi(uwsgi_ignition+0x192) [0x4644d2]
+uwsgi(uwsgi_worker_run+0x2ed) [0x468c4d]
+uwsgi() [0x46920f]
+uwsgi(_start+0) [0x41a78e]
+/lib64/libc.so.6(__libc_start_main+0xf5) [0x7efe5de36445]
+uwsgi() [0x41a7b7]
+*** end of backtrace ***
+!!! uWSGI process 13524 got Segmentation Fault !!!
+*** backtrace of 13524 ***
+uwsgi(uwsgi_backtrace+0x2e) [0x463eee]
+uwsgi(uwsgi_segfault+0x21) [0x464281]
+/lib64/libc.so.6(+0x362f0) [0x7efe5de4a2f0]
+/opt/rh/rh-python36/root/usr/lib64/python3.6/site-packages/google/protobuf/pyext/_message.cpython-36m-x86_64-linux-gnu.so(+0xbab03) [0x7efe4dbc0b03]
+/opt/rh/rh-python36/root/usr/lib64/libpython3.6m.so.rh-python36-1.0(+0xd5a3e) [0x7efe5e4eda3e]
+/opt/rh/rh-python36/root/usr/lib64/libpython3.6m.so.rh-python36-1.0(+0xf5396) [0x7efe5e50d396]
+/opt/rh/rh-python36/root/usr/lib64/libpython3.6m.so.rh-python36-1.0(PyDict_Clear+0x1c9) [0x7efe5e4f4099]
+/opt/rh/rh-python36/root/usr/lib64/libpython3.6m.so.rh-python36-1.0(+0xdc0d9) [0x7efe5e4f40d9]
+/opt/rh/rh-python36/root/usr/lib64/libpython3.6m.so.rh-python36-1.0(+0x186561) [0x7efe5e59e561]
+/opt/rh/rh-python36/root/usr/lib64/libpython3.6m.so.rh-python36-1.0(_PyGC_CollectNoFail+0x29) [0x7efe5e5fb3d9]
+/opt/rh/rh-python36/root/usr/lib64/libpython3.6m.so.rh-python36-1.0(PyImport_Cleanup+0x155) [0x7efe5e581155]
+/opt/rh/rh-python36/root/usr/lib64/libpython3.6m.so.rh-python36-1.0(Py_FinalizeEx+0x67) [0x7efe5e5f1f07]
+uwsgi(uwsgi_plugins_atexit+0x71) [0x4614a1]
+/lib64/libc.so.6(+0x39bd9) [0x7efe5de4dbd9]
+/lib64/libc.so.6(+0x39c27) [0x7efe5de4dc27]
+uwsgi() [0x41d8ff]
+uwsgi(end_me+0x25) [0x4614f5]
+/lib64/libpthread.so.0(+0xf6d0) [0x7efe5f0586d0]
+/lib64/libc.so.6(epoll_wait+0x33) [0x7efe5df13183]
+uwsgi(event_queue_wait+0x23) [0x457b33]
+uwsgi(wsgi_req_accept+0xde) [0x41b2be]
+uwsgi(simple_loop_run+0xb6) [0x460506]
+uwsgi(simple_loop+0xe) [0x46033e]
+uwsgi(uwsgi_ignition+0x192) [0x4644d2]
+uwsgi(uwsgi_worker_run+0x2ed) [0x468c4d]
+uwsgi() [0x46920f]
+uwsgi(_start+0) [0x41a78e]
+/lib64/libc.so.6(__libc_start_main+0xf5) [0x7efe5de36445]
+uwsgi() [0x41a7b7]
+*** end of backtrace ***
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Wed Sep  5 13:55:06 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-28) on 03 September 2018 10:47:15
+os: Linux-3.10.0-862.11.6.el7.x86_64 #1 SMP Tue Aug 14 21:49:04 UTC 2018
+nodename: centos-app
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/hailemaryammecca/VehicleRoutingRESTService
+detected binary path: /opt/rh/rh-python36/root/usr/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 29211
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:7000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.3 (default, Mar 20 2018, 13:50:41)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)]
+Python main interpreter initialized at 0x1565830
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 250032 bytes (244 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1565830 pid: 13608 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 13608)
+spawned uWSGI worker 1 (pid: 13610, cores: 2)
+writing pidfile to pid_list.txt
+spawned uWSGI worker 2 (pid: 13611, cores: 2)
+writing pidfile to pid_list.txt
+writing pidfile to pid_list.txt
+fetching matrix...
+Traceback (most recent call last):
+  File "wsgi.py", line 30, in application
+    response = VRPService(data).get_response()
+  File "./app.py", line 21, in __init__
+    len(ordered_locations)
+  File "./app.py", line 42, in json_response
+    locations.copy()
+  File "./gmaps.py", line 39, in get_matrix
+    json_data = self.get_json_response()
+  File "./gmaps.py", line 28, in get_json_response
+    destinations=self.destination_locations
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 365, in wrapper
+    result = func(*args, **kwargs)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/distance_matrix.py", line 138, in distance_matrix
+    return client._request("/maps/api/distancematrix/json", params)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 260, in _request
+    result = self._get_body(response)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 290, in _get_body
+    body.get("error_message"))
+googlemaps.exceptions.ApiError: MAX_ELEMENTS_EXCEEDED
+[pid: 13611|app: 0|req: 1/1] 196.188.127.103 () {36 vars in 485 bytes} [Wed Sep  5 13:55:20 2018] POST /api => generated 0 bytes in 77 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 0)
+fetching matrix...
+Traceback (most recent call last):
+  File "wsgi.py", line 30, in application
+    response = VRPService(data).get_response()
+  File "./app.py", line 21, in __init__
+    len(ordered_locations)
+  File "./app.py", line 42, in json_response
+    locations.copy()
+  File "./gmaps.py", line 39, in get_matrix
+    json_data = self.get_json_response()
+  File "./gmaps.py", line 28, in get_json_response
+    destinations=self.destination_locations
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 365, in wrapper
+    result = func(*args, **kwargs)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/distance_matrix.py", line 138, in distance_matrix
+    return client._request("/maps/api/distancematrix/json", params)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 260, in _request
+    result = self._get_body(response)
+  File "/opt/rh/rh-python36/root/usr/lib/python3.6/site-packages/googlemaps/client.py", line 290, in _get_body
+    body.get("error_message"))
+googlemaps.exceptions.ApiError: MAX_ELEMENTS_EXCEEDED
+[pid: 13611|app: 0|req: 2/2] 196.188.127.103 () {36 vars in 485 bytes} [Wed Sep  5 13:55:36 2018] POST /api => generated 0 bytes in 72 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 1)
+fetching matrix...
+{'destination_addresses': ['Bedesta Bulding, Addis Ababa, Ethiopia', 'Lideta, Addis Ababa, Ethiopia', 'Addis Ketema, Addis Ababa, Ethiopia', "Côte D'Ivoire St, አዲስ አበባ, Ethiopia", 'Urael, Addis Ababa, Ethiopia', 'Seychelles St, አዲስ አበባ, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Yeka, Addis Ababa, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia'], 'origin_addresses': ['Bedesta Bulding, Addis Ababa, Ethiopia', 'Lideta, Addis Ababa, Ethiopia', 'Addis Ketema, Addis Ababa, Ethiopia', "Côte D'Ivoire St, አዲስ አበባ, Ethiopia", 'Urael, Addis Ababa, Ethiopia', 'Seychelles St, አዲስ አበባ, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Yeka, Addis Ababa, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia'], 'rows': [{'elements': [{'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '4.4 km', 'value': 4441}, 'duration': {'text': '12 mins', 'value': 710}, 'status': 'OK'}, {'distance': {'text': '6.1 km', 'value': 6127}, 'duration': {'text': '17 mins', 'value': 998}, 'status': 'OK'}, {'distance': {'text': '4.3 km', 'value': 4261}, 'duration': {'text': '10 mins', 'value': 576}, 'status': 'OK'}, {'distance': {'text': '3.7 km', 'value': 3652}, 'duration': {'text': '9 mins', 'value': 524}, 'status': 'OK'}, {'distance': {'text': '5.5 km', 'value': 5464}, 'duration': {'text': '14 mins', 'value': 855}, 'status': 'OK'}, {'distance': {'text': '7.4 km', 'value': 7441}, 'duration': {'text': '22 mins', 'value': 1312}, 'status': 'OK'}, {'distance': {'text': '7.4 km', 'value': 7430}, 'duration': {'text': '18 mins', 'value': 1055}, 'status': 'OK'}, {'distance': {'text': '4.9 km', 'value': 4901}, 'duration': {'text': '13 mins', 'value': 755}, 'status': 'OK'}, {'distance': {'text': '8.2 km', 'value': 8161}, 'duration': {'text': '23 mins', 'value': 1356}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '3.7 km', 'value': 3675}, 'duration': {'text': '11 mins', 'value': 644}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '3.8 km', 'value': 3791}, 'duration': {'text': '10 mins', 'value': 613}, 'status': 'OK'}, {'distance': {'text': '6.8 km', 'value': 6830}, 'duration': {'text': '17 mins', 'value': 1024}, 'status': 'OK'}, {'distance': {'text': '6.6 km', 'value': 6637}, 'duration': {'text': '16 mins', 'value': 979}, 'status': 'OK'}, {'distance': {'text': '2.9 km', 'value': 2874}, 'duration': {'text': '7 mins', 'value': 426}, 'status': 'OK'}, {'distance': {'text': '5.1 km', 'value': 5104}, 'duration': {'text': '15 mins', 'value': 927}, 'status': 'OK'}, {'distance': {'text': '10.0 km', 'value': 9999}, 'duration': {'text': '25 mins', 'value': 1503}, 'status': 'OK'}, {'distance': {'text': '7.5 km', 'value': 7470}, 'duration': {'text': '20 mins', 'value': 1203}, 'status': 'OK'}, {'distance': {'text': '5.4 km', 'value': 5424}, 'duration': {'text': '18 mins', 'value': 1051}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '6.6 km', 'value': 6565}, 'duration': {'text': '17 mins', 'value': 1035}, 'status': 'OK'}, {'distance': {'text': '3.3 km', 'value': 3287}, 'duration': {'text': '9 mins', 'value': 511}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '7.1 km', 'value': 7143}, 'duration': {'text': '20 mins', 'value': 1224}, 'status': 'OK'}, {'distance': {'text': '9.5 km', 'value': 9527}, 'duration': {'text': '23 mins', 'value': 1371}, 'status': 'OK'}, {'distance': {'text': '4.1 km', 'value': 4132}, 'duration': {'text': '10 mins', 'value': 586}, 'status': 'OK'}, {'distance': {'text': '1.3 km', 'value': 1311}, 'duration': {'text': '6 mins', 'value': 384}, 'status': 'OK'}, {'distance': {'text': '12.9 km', 'value': 12889}, 'duration': {'text': '32 mins', 'value': 1894}, 'status': 'OK'}, {'distance': {'text': '9.5 km', 'value': 9498}, 'duration': {'text': '24 mins', 'value': 1437}, 'status': 'OK'}, {'distance': {'text': '8.0 km', 'value': 7984}, 'duration': {'text': '23 mins', 'value': 1373}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '4.0 km', 'value': 4014}, 'duration': {'text': '11 mins', 'value': 634}, 'status': 'OK'}, {'distance': {'text': '6.7 km', 'value': 6706}, 'duration': {'text': '18 mins', 'value': 1065}, 'status': 'OK'}, {'distance': {'text': '6.3 km', 'value': 6337}, 'duration': {'text': '20 mins', 'value': 1179}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '3.8 km', 'value': 3808}, 'duration': {'text': '12 mins', 'value': 728}, 'status': 'OK'}, {'distance': {'text': '7.7 km', 'value': 7728}, 'duration': {'text': '20 mins', 'value': 1210}, 'status': 'OK'}, {'distance': {'text': '7.6 km', 'value': 7650}, 'duration': {'text': '25 mins', 'value': 1493}, 'status': 'OK'}, {'distance': {'text': '6.3 km', 'value': 6280}, 'duration': {'text': '17 mins', 'value': 1013}, 'status': 'OK'}, {'distance': {'text': '2.6 km', 'value': 2559}, 'duration': {'text': '9 mins', 'value': 563}, 'status': 'OK'}, {'distance': {'text': '10.3 km', 'value': 10278}, 'duration': {'text': '31 mins', 'value': 1836}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '2.9 km', 'value': 2910}, 'duration': {'text': '7 mins', 'value': 413}, 'status': 'OK'}, {'distance': {'text': '7.3 km', 'value': 7339}, 'duration': {'text': '18 mins', 'value': 1052}, 'status': 'OK'}, {'distance': {'text': '9.0 km', 'value': 9025}, 'duration': {'text': '22 mins', 'value': 1339}, 'status': 'OK'}, {'distance': {'text': '3.9 km', 'value': 3891}, 'duration': {'text': '11 mins', 'value': 640}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '7.4 km', 'value': 7437}, 'duration': {'text': '19 mins', 'value': 1159}, 'status': 'OK'}, {'distance': {'text': '10.3 km', 'value': 10338}, 'duration': {'text': '28 mins', 'value': 1654}, 'status': 'OK'}, {'distance': {'text': '4.7 km', 'value': 4745}, 'duration': {'text': '16 mins', 'value': 968}, 'status': 'OK'}, {'distance': {'text': '5.1 km', 'value': 5064}, 'duration': {'text': '16 mins', 'value': 934}, 'status': 'OK'}, {'distance': {'text': '7.8 km', 'value': 7824}, 'duration': {'text': '22 mins', 'value': 1328}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '6.0 km', 'value': 5959}, 'duration': {'text': '15 mins', 'value': 928}, 'status': 'OK'}, {'distance': {'text': '3.3 km', 'value': 3342}, 'duration': {'text': '7 mins', 'value': 446}, 'status': 'OK'}, {'distance': {'text': '4.4 km', 'value': 4384}, 'duration': {'text': '11 mins', 'value': 662}, 'status': 'OK'}, {'distance': {'text': '9.1 km', 'value': 9114}, 'duration': {'text': '22 mins', 'value': 1308}, 'status': 'OK'}, {'distance': {'text': '7.8 km', 'value': 7815}, 'duration': {'text': '19 mins', 'value': 1146}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '5.7 km', 'value': 5697}, 'duration': {'text': '16 mins', 'value': 977}, 'status': 'OK'}, {'distance': {'text': '11.3 km', 'value': 11319}, 'duration': {'text': '28 mins', 'value': 1671}, 'status': 'OK'}, {'distance': {'text': '9.8 km', 'value': 9754}, 'duration': {'text': '25 mins', 'value': 1487}, 'status': 'OK'}, {'distance': {'text': '3.9 km', 'value': 3916}, 'duration': {'text': '14 mins', 'value': 838}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '8.1 km', 'value': 8094}, 'duration': {'text': '23 mins', 'value': 1367}, 'status': 'OK'}, {'distance': {'text': '4.8 km', 'value': 4815}, 'duration': {'text': '14 mins', 'value': 843}, 'status': 'OK'}, {'distance': {'text': '1.5 km', 'value': 1530}, 'duration': {'text': '6 mins', 'value': 359}, 'status': 'OK'}, {'distance': {'text': '8.7 km', 'value': 8672}, 'duration': {'text': '26 mins', 'value': 1556}, 'status': 'OK'}, {'distance': {'text': '11.1 km', 'value': 11056}, 'duration': {'text': '28 mins', 'value': 1703}, 'status': 'OK'}, {'distance': {'text': '5.7 km', 'value': 5660}, 'duration': {'text': '15 mins', 'value': 918}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '14.4 km', 'value': 14418}, 'duration': {'text': '37 mins', 'value': 2226}, 'status': 'OK'}, {'distance': {'text': '11.0 km', 'value': 11027}, 'duration': {'text': '29 mins', 'value': 1769}, 'status': 'OK'}, {'distance': {'text': '12.0 km', 'value': 11969}, 'duration': {'text': '26 mins', 'value': 1538}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '6.8 km', 'value': 6765}, 'duration': {'text': '18 mins', 'value': 1106}, 'status': 'OK'}, {'distance': {'text': '11.2 km', 'value': 11177}, 'duration': {'text': '27 mins', 'value': 1608}, 'status': 'OK'}, {'distance': {'text': '12.9 km', 'value': 12863}, 'duration': {'text': '32 mins', 'value': 1895}, 'status': 'OK'}, {'distance': {'text': '6.3 km', 'value': 6301}, 'duration': {'text': '17 mins', 'value': 1004}, 'status': 'OK'}, {'distance': {'text': '4.9 km', 'value': 4896}, 'duration': {'text': '16 mins', 'value': 969}, 'status': 'OK'}, {'distance': {'text': '11.4 km', 'value': 11411}, 'duration': {'text': '28 mins', 'value': 1706}, 'status': 'OK'}, {'distance': {'text': '14.2 km', 'value': 14176}, 'duration': {'text': '37 mins', 'value': 2209}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '5.2 km', 'value': 5180}, 'duration': {'text': '14 mins', 'value': 831}, 'status': 'OK'}, {'distance': {'text': '11.8 km', 'value': 11798}, 'duration': {'text': '31 mins', 'value': 1875}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '6.3 km', 'value': 6275}, 'duration': {'text': '14 mins', 'value': 812}, 'status': 'OK'}, {'distance': {'text': '9.0 km', 'value': 8968}, 'duration': {'text': '21 mins', 'value': 1244}, 'status': 'OK'}, {'distance': {'text': '8.1 km', 'value': 8143}, 'duration': {'text': '22 mins', 'value': 1336}, 'status': 'OK'}, {'distance': {'text': '2.6 km', 'value': 2561}, 'duration': {'text': '7 mins', 'value': 396}, 'status': 'OK'}, {'distance': {'text': '5.5 km', 'value': 5468}, 'duration': {'text': '15 mins', 'value': 899}, 'status': 'OK'}, {'distance': {'text': '10.0 km', 'value': 9990}, 'duration': {'text': '23 mins', 'value': 1389}, 'status': 'OK'}, {'distance': {'text': '9.5 km', 'value': 9456}, 'duration': {'text': '28 mins', 'value': 1651}, 'status': 'OK'}, {'distance': {'text': '5.2 km', 'value': 5174}, 'duration': {'text': '15 mins', 'value': 907}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '13.5 km', 'value': 13454}, 'duration': {'text': '33 mins', 'value': 1957}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '7.9 km', 'value': 7934}, 'duration': {'text': '22 mins', 'value': 1347}, 'status': 'OK'}, {'distance': {'text': '5.1 km', 'value': 5117}, 'duration': {'text': '15 mins', 'value': 920}, 'status': 'OK'}, {'distance': {'text': '7.5 km', 'value': 7545}, 'duration': {'text': '20 mins', 'value': 1185}, 'status': 'OK'}, {'distance': {'text': '11.3 km', 'value': 11332}, 'duration': {'text': '29 mins', 'value': 1721}, 'status': 'OK'}, {'distance': {'text': '8.2 km', 'value': 8185}, 'duration': {'text': '23 mins', 'value': 1362}, 'status': 'OK'}, {'distance': {'text': '3.8 km', 'value': 3831}, 'duration': {'text': '11 mins', 'value': 667}, 'status': 'OK'}, {'distance': {'text': '10.0 km', 'value': 9955}, 'duration': {'text': '22 mins', 'value': 1307}, 'status': 'OK'}, {'distance': {'text': '11.7 km', 'value': 11690}, 'duration': {'text': '31 mins', 'value': 1887}, 'status': 'OK'}, {'distance': {'text': '12.0 km', 'value': 11972}, 'duration': {'text': '32 mins', 'value': 1899}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}]}], 'status': 'OK'}
+done.
+solving...
+Done.
+[pid: 13611|app: 0|req: 3/3] 196.188.127.103 () {36 vars in 485 bytes} [Thu Sep  6 07:39:32 2018] POST /api => generated 268 bytes in 194 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 0)
+fetching matrix...
+{'destination_addresses': ['Bedesta Bulding, Addis Ababa, Ethiopia', 'Lideta, Addis Ababa, Ethiopia', 'Addis Ketema, Addis Ababa, Ethiopia', "Côte D'Ivoire St, አዲስ አበባ, Ethiopia", 'Urael, Addis Ababa, Ethiopia', 'Seychelles St, አዲስ አበባ, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Yeka, Addis Ababa, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia'], 'origin_addresses': ['Bedesta Bulding, Addis Ababa, Ethiopia', 'Lideta, Addis Ababa, Ethiopia', 'Addis Ketema, Addis Ababa, Ethiopia', "Côte D'Ivoire St, አዲስ አበባ, Ethiopia", 'Urael, Addis Ababa, Ethiopia', 'Seychelles St, አዲስ አበባ, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Yeka, Addis Ababa, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia'], 'rows': [{'elements': [{'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '4.4 km', 'value': 4441}, 'duration': {'text': '12 mins', 'value': 710}, 'status': 'OK'}, {'distance': {'text': '6.1 km', 'value': 6127}, 'duration': {'text': '17 mins', 'value': 998}, 'status': 'OK'}, {'distance': {'text': '4.3 km', 'value': 4261}, 'duration': {'text': '10 mins', 'value': 576}, 'status': 'OK'}, {'distance': {'text': '3.7 km', 'value': 3652}, 'duration': {'text': '9 mins', 'value': 524}, 'status': 'OK'}, {'distance': {'text': '5.5 km', 'value': 5464}, 'duration': {'text': '14 mins', 'value': 855}, 'status': 'OK'}, {'distance': {'text': '7.4 km', 'value': 7441}, 'duration': {'text': '22 mins', 'value': 1312}, 'status': 'OK'}, {'distance': {'text': '7.4 km', 'value': 7430}, 'duration': {'text': '18 mins', 'value': 1055}, 'status': 'OK'}, {'distance': {'text': '4.9 km', 'value': 4901}, 'duration': {'text': '13 mins', 'value': 755}, 'status': 'OK'}, {'distance': {'text': '8.2 km', 'value': 8161}, 'duration': {'text': '23 mins', 'value': 1356}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '3.7 km', 'value': 3675}, 'duration': {'text': '11 mins', 'value': 644}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '3.8 km', 'value': 3791}, 'duration': {'text': '10 mins', 'value': 613}, 'status': 'OK'}, {'distance': {'text': '6.8 km', 'value': 6830}, 'duration': {'text': '17 mins', 'value': 1024}, 'status': 'OK'}, {'distance': {'text': '6.6 km', 'value': 6637}, 'duration': {'text': '16 mins', 'value': 979}, 'status': 'OK'}, {'distance': {'text': '2.9 km', 'value': 2874}, 'duration': {'text': '7 mins', 'value': 426}, 'status': 'OK'}, {'distance': {'text': '5.1 km', 'value': 5104}, 'duration': {'text': '15 mins', 'value': 927}, 'status': 'OK'}, {'distance': {'text': '10.0 km', 'value': 9999}, 'duration': {'text': '25 mins', 'value': 1503}, 'status': 'OK'}, {'distance': {'text': '7.5 km', 'value': 7470}, 'duration': {'text': '20 mins', 'value': 1203}, 'status': 'OK'}, {'distance': {'text': '5.4 km', 'value': 5424}, 'duration': {'text': '18 mins', 'value': 1051}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '6.6 km', 'value': 6565}, 'duration': {'text': '17 mins', 'value': 1035}, 'status': 'OK'}, {'distance': {'text': '3.3 km', 'value': 3287}, 'duration': {'text': '9 mins', 'value': 511}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '7.1 km', 'value': 7143}, 'duration': {'text': '20 mins', 'value': 1224}, 'status': 'OK'}, {'distance': {'text': '9.5 km', 'value': 9527}, 'duration': {'text': '23 mins', 'value': 1371}, 'status': 'OK'}, {'distance': {'text': '4.1 km', 'value': 4132}, 'duration': {'text': '10 mins', 'value': 586}, 'status': 'OK'}, {'distance': {'text': '1.3 km', 'value': 1311}, 'duration': {'text': '6 mins', 'value': 384}, 'status': 'OK'}, {'distance': {'text': '12.9 km', 'value': 12889}, 'duration': {'text': '32 mins', 'value': 1894}, 'status': 'OK'}, {'distance': {'text': '9.5 km', 'value': 9498}, 'duration': {'text': '24 mins', 'value': 1437}, 'status': 'OK'}, {'distance': {'text': '8.0 km', 'value': 7984}, 'duration': {'text': '23 mins', 'value': 1373}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '4.0 km', 'value': 4014}, 'duration': {'text': '11 mins', 'value': 634}, 'status': 'OK'}, {'distance': {'text': '6.7 km', 'value': 6706}, 'duration': {'text': '18 mins', 'value': 1065}, 'status': 'OK'}, {'distance': {'text': '6.3 km', 'value': 6337}, 'duration': {'text': '20 mins', 'value': 1179}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '3.8 km', 'value': 3808}, 'duration': {'text': '12 mins', 'value': 728}, 'status': 'OK'}, {'distance': {'text': '7.7 km', 'value': 7728}, 'duration': {'text': '20 mins', 'value': 1210}, 'status': 'OK'}, {'distance': {'text': '7.6 km', 'value': 7650}, 'duration': {'text': '25 mins', 'value': 1493}, 'status': 'OK'}, {'distance': {'text': '6.3 km', 'value': 6280}, 'duration': {'text': '17 mins', 'value': 1013}, 'status': 'OK'}, {'distance': {'text': '2.6 km', 'value': 2559}, 'duration': {'text': '9 mins', 'value': 563}, 'status': 'OK'}, {'distance': {'text': '10.3 km', 'value': 10278}, 'duration': {'text': '31 mins', 'value': 1836}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '2.9 km', 'value': 2910}, 'duration': {'text': '7 mins', 'value': 413}, 'status': 'OK'}, {'distance': {'text': '7.3 km', 'value': 7339}, 'duration': {'text': '18 mins', 'value': 1052}, 'status': 'OK'}, {'distance': {'text': '9.0 km', 'value': 9025}, 'duration': {'text': '22 mins', 'value': 1339}, 'status': 'OK'}, {'distance': {'text': '3.9 km', 'value': 3891}, 'duration': {'text': '11 mins', 'value': 640}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '7.4 km', 'value': 7437}, 'duration': {'text': '19 mins', 'value': 1159}, 'status': 'OK'}, {'distance': {'text': '10.3 km', 'value': 10338}, 'duration': {'text': '28 mins', 'value': 1654}, 'status': 'OK'}, {'distance': {'text': '4.7 km', 'value': 4745}, 'duration': {'text': '16 mins', 'value': 968}, 'status': 'OK'}, {'distance': {'text': '5.1 km', 'value': 5064}, 'duration': {'text': '16 mins', 'value': 934}, 'status': 'OK'}, {'distance': {'text': '7.8 km', 'value': 7824}, 'duration': {'text': '22 mins', 'value': 1328}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '6.0 km', 'value': 5959}, 'duration': {'text': '15 mins', 'value': 928}, 'status': 'OK'}, {'distance': {'text': '3.3 km', 'value': 3342}, 'duration': {'text': '7 mins', 'value': 446}, 'status': 'OK'}, {'distance': {'text': '4.4 km', 'value': 4384}, 'duration': {'text': '11 mins', 'value': 662}, 'status': 'OK'}, {'distance': {'text': '9.1 km', 'value': 9114}, 'duration': {'text': '22 mins', 'value': 1308}, 'status': 'OK'}, {'distance': {'text': '7.8 km', 'value': 7815}, 'duration': {'text': '19 mins', 'value': 1146}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '5.7 km', 'value': 5697}, 'duration': {'text': '16 mins', 'value': 977}, 'status': 'OK'}, {'distance': {'text': '11.3 km', 'value': 11319}, 'duration': {'text': '28 mins', 'value': 1671}, 'status': 'OK'}, {'distance': {'text': '9.8 km', 'value': 9754}, 'duration': {'text': '25 mins', 'value': 1487}, 'status': 'OK'}, {'distance': {'text': '3.9 km', 'value': 3916}, 'duration': {'text': '14 mins', 'value': 838}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '8.1 km', 'value': 8094}, 'duration': {'text': '23 mins', 'value': 1367}, 'status': 'OK'}, {'distance': {'text': '4.8 km', 'value': 4815}, 'duration': {'text': '14 mins', 'value': 843}, 'status': 'OK'}, {'distance': {'text': '1.5 km', 'value': 1530}, 'duration': {'text': '6 mins', 'value': 359}, 'status': 'OK'}, {'distance': {'text': '8.7 km', 'value': 8672}, 'duration': {'text': '26 mins', 'value': 1556}, 'status': 'OK'}, {'distance': {'text': '11.1 km', 'value': 11056}, 'duration': {'text': '28 mins', 'value': 1703}, 'status': 'OK'}, {'distance': {'text': '5.7 km', 'value': 5660}, 'duration': {'text': '15 mins', 'value': 918}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '14.4 km', 'value': 14418}, 'duration': {'text': '37 mins', 'value': 2226}, 'status': 'OK'}, {'distance': {'text': '11.0 km', 'value': 11027}, 'duration': {'text': '29 mins', 'value': 1769}, 'status': 'OK'}, {'distance': {'text': '12.0 km', 'value': 11969}, 'duration': {'text': '26 mins', 'value': 1538}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '6.8 km', 'value': 6765}, 'duration': {'text': '18 mins', 'value': 1106}, 'status': 'OK'}, {'distance': {'text': '11.2 km', 'value': 11177}, 'duration': {'text': '27 mins', 'value': 1608}, 'status': 'OK'}, {'distance': {'text': '12.9 km', 'value': 12863}, 'duration': {'text': '32 mins', 'value': 1895}, 'status': 'OK'}, {'distance': {'text': '6.3 km', 'value': 6301}, 'duration': {'text': '17 mins', 'value': 1004}, 'status': 'OK'}, {'distance': {'text': '4.9 km', 'value': 4896}, 'duration': {'text': '16 mins', 'value': 969}, 'status': 'OK'}, {'distance': {'text': '11.4 km', 'value': 11411}, 'duration': {'text': '28 mins', 'value': 1706}, 'status': 'OK'}, {'distance': {'text': '14.2 km', 'value': 14176}, 'duration': {'text': '37 mins', 'value': 2209}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '5.2 km', 'value': 5180}, 'duration': {'text': '14 mins', 'value': 831}, 'status': 'OK'}, {'distance': {'text': '11.8 km', 'value': 11798}, 'duration': {'text': '31 mins', 'value': 1875}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '6.3 km', 'value': 6275}, 'duration': {'text': '14 mins', 'value': 812}, 'status': 'OK'}, {'distance': {'text': '9.0 km', 'value': 8968}, 'duration': {'text': '21 mins', 'value': 1244}, 'status': 'OK'}, {'distance': {'text': '8.1 km', 'value': 8143}, 'duration': {'text': '22 mins', 'value': 1336}, 'status': 'OK'}, {'distance': {'text': '2.6 km', 'value': 2561}, 'duration': {'text': '7 mins', 'value': 396}, 'status': 'OK'}, {'distance': {'text': '5.5 km', 'value': 5468}, 'duration': {'text': '15 mins', 'value': 899}, 'status': 'OK'}, {'distance': {'text': '10.0 km', 'value': 9990}, 'duration': {'text': '23 mins', 'value': 1389}, 'status': 'OK'}, {'distance': {'text': '9.5 km', 'value': 9456}, 'duration': {'text': '28 mins', 'value': 1651}, 'status': 'OK'}, {'distance': {'text': '5.2 km', 'value': 5174}, 'duration': {'text': '15 mins', 'value': 907}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '13.5 km', 'value': 13454}, 'duration': {'text': '33 mins', 'value': 1957}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '7.9 km', 'value': 7934}, 'duration': {'text': '22 mins', 'value': 1347}, 'status': 'OK'}, {'distance': {'text': '5.1 km', 'value': 5117}, 'duration': {'text': '15 mins', 'value': 920}, 'status': 'OK'}, {'distance': {'text': '7.5 km', 'value': 7545}, 'duration': {'text': '20 mins', 'value': 1185}, 'status': 'OK'}, {'distance': {'text': '11.3 km', 'value': 11332}, 'duration': {'text': '29 mins', 'value': 1721}, 'status': 'OK'}, {'distance': {'text': '8.2 km', 'value': 8185}, 'duration': {'text': '23 mins', 'value': 1362}, 'status': 'OK'}, {'distance': {'text': '3.8 km', 'value': 3831}, 'duration': {'text': '11 mins', 'value': 667}, 'status': 'OK'}, {'distance': {'text': '10.0 km', 'value': 9955}, 'duration': {'text': '22 mins', 'value': 1307}, 'status': 'OK'}, {'distance': {'text': '11.7 km', 'value': 11690}, 'duration': {'text': '31 mins', 'value': 1887}, 'status': 'OK'}, {'distance': {'text': '12.0 km', 'value': 11972}, 'duration': {'text': '32 mins', 'value': 1899}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}]}], 'status': 'OK'}
+done.
+solving...
+Done.
+[pid: 13611|app: 0|req: 4/4] 196.188.127.103 () {36 vars in 485 bytes} [Thu Sep  6 07:47:51 2018] POST /api => generated 268 bytes in 171 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 1)
+[pid: 13610|app: 0|req: 1/5] 196.188.127.103 () {32 vars in 577 bytes} [Thu Sep  6 07:49:45 2018] GET / => generated 49 bytes in 1 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 1)
+[pid: 13610|app: 0|req: 2/6] 196.188.127.103 () {32 vars in 560 bytes} [Thu Sep  6 07:49:46 2018] GET /favicon.ico => generated 60 bytes in 0 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 0)
+[pid: 13610|app: 0|req: 3/7] 196.188.127.103 () {32 vars in 583 bytes} [Thu Sep  6 07:49:49 2018] GET /api => generated 94 bytes in 0 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 1)
+[pid: 13610|app: 0|req: 4/8] 196.188.127.103 () {32 vars in 563 bytes} [Thu Sep  6 07:49:50 2018] GET /favicon.ico => generated 60 bytes in 0 msecs (HTTP/1.1 200) 1 headers in 44 bytes (0 switches on core 0)
+fetching matrix...
+{'destination_addresses': ['Unnamed Road, Nazret, Ethiopia', 'Bahir Dar, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Unnamed Road, Awassa, Ethiopia', '7, Ethiopia'], 'origin_addresses': ['Unnamed Road, Nazret, Ethiopia', 'Bahir Dar, Ethiopia', 'Unnamed Road, Addis Ababa, Ethiopia', 'Unnamed Road, Awassa, Ethiopia', '7, Ethiopia'], 'rows': [{'elements': [{'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '589 km', 'value': 588624}, 'duration': {'text': '10 hours 18 mins', 'value': 37063}, 'status': 'OK'}, {'distance': {'text': '91.1 km', 'value': 91145}, 'duration': {'text': '1 hour 14 mins', 'value': 4457}, 'status': 'OK'}, {'distance': {'text': '223 km', 'value': 223065}, 'duration': {'text': '3 hours 50 mins', 'value': 13779}, 'status': 'OK'}, {'distance': {'text': '88.6 km', 'value': 88577}, 'duration': {'text': '1 hour 35 mins', 'value': 5724}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '582 km', 'value': 582300}, 'duration': {'text': '10 hours 13 mins', 'value': 36809}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '502 km', 'value': 502062}, 'duration': {'text': '9 hours 7 mins', 'value': 32824}, 'status': 'OK'}, {'distance': {'text': '771 km', 'value': 770642}, 'duration': {'text': '13 hours 13 mins', 'value': 47555}, 'status': 'OK'}, {'distance': {'text': '636 km', 'value': 636155}, 'duration': {'text': '10 hours 58 mins', 'value': 39500}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '80.2 km', 'value': 80238}, 'duration': {'text': '1 hour 6 mins', 'value': 3985}, 'status': 'OK'}, {'distance': {'text': '504 km', 'value': 503628}, 'duration': {'text': '9 hours 12 mins', 'value': 33120}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '269 km', 'value': 268580}, 'duration': {'text': '4 hours 6 mins', 'value': 14731}, 'status': 'OK'}, {'distance': {'text': '134 km', 'value': 134093}, 'duration': {'text': '1 hour 51 mins', 'value': 6676}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '223 km', 'value': 223063}, 'duration': {'text': '3 hours 44 mins', 'value': 13448}, 'status': 'OK'}, {'distance': {'text': '772 km', 'value': 771578}, 'duration': {'text': '13 hours 13 mins', 'value': 47606}, 'status': 'OK'}, {'distance': {'text': '274 km', 'value': 274099}, 'duration': {'text': '4 hours 10 mins', 'value': 15000}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}, {'distance': {'text': '134 km', 'value': 134495}, 'duration': {'text': '2 hours 12 mins', 'value': 7908}, 'status': 'OK'}]}, {'elements': [{'distance': {'text': '88.6 km', 'value': 88568}, 'duration': {'text': '1 hour 32 mins', 'value': 5540}, 'status': 'OK'}, {'distance': {'text': '637 km', 'value': 637083}, 'duration': {'text': '11 hours 2 mins', 'value': 39698}, 'status': 'OK'}, {'distance': {'text': '140 km', 'value': 139604}, 'duration': {'text': '1 hour 58 mins', 'value': 7092}, 'status': 'OK'}, {'distance': {'text': '134 km', 'value': 134487}, 'duration': {'text': '2 hours 14 mins', 'value': 8055}, 'status': 'OK'}, {'distance': {'text': '1 m', 'value': 0}, 'duration': {'text': '1 min', 'value': 0}, 'status': 'OK'}]}], 'status': 'OK'}
+done.
+solving...
+Done.
+[pid: 13610|app: 0|req: 5/9] 196.188.127.103 () {30 vars in 403 bytes} [Thu Sep  6 07:55:32 2018] POST /api => generated 170 bytes in 184 msecs (HTTP/1.1 200) 1 headers in 44 bytes (1 switches on core 1)

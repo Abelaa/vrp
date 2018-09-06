@@ -1,4 +1,6 @@
 __pycache__/
 venv/
+*.save*
+nohup.out
 pid_list.txt
 df
