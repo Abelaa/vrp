@@ -20,15 +20,26 @@ class DistanceMatrix():
 		gmaps = googlemaps.Client(key=self.api_key)
 		print("fetching matrix...")
 
-		# fetch distance matrix for driving b/n given points in meter
-		distance_matrix = gmaps.distance_matrix(
-			mode='driving',
-			units='metric',
-			origins=self.origin_locations, 
-			destinations=self.destination_locations
+		try:
+
+			# fetch distance matrix for driving b/n given points in meter
+			distance_matrix = gmaps.distance_matrix(
+				mode='driving',
+				units='metric',
+				origins=self.origin_locations, 
+				destinations=self.destination_locations
 			)
-		print(distance_matrix)
-		print("done.")
+			print(distance_matrix)
+			print("done.")
+
+		except googlemaps.exceptions.ApiError as err:
+
+			reference_link = "http://developers.google.com/maps/documentation/distance-matrix/intro#StatusCodes"
+
+			distance_matrix = {
+				"status": '{}'.format(err),
+				"error_message": 'Status Code Reference Link - {}'.format(reference_link)
+			}
 
 		return distance_matrix
 
