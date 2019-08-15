@@ -1,6 +1,6 @@
-Solution to Vehicle Routing Problem using google maps api
-Made for Centos Linux OS but works great on ubuntu aswell,
-just skip step 1  and other centos specific commands
+#### Solution to Vehicle Routing Problem using google maps api
+##### Made for Centos Linux OS but works great on ubuntu and other linux distributions aswell,
+##### just skip step 1 and other centos specific commands if you are on a different environment
 
 1. Install python3 on centos linux
 
