@@ -1,27 +1,36 @@
-#### Solution to Vehicle Routing Problem using google maps api
-##### Made for Centos Linux OS but works great on ubuntu and other linux distributions aswell, just skip step 1 and other centos specific commands if you are on a different environment
+## Solution to Vehicle Routing Problem using google maps api
+
+This is an API written in python 
+
+Made for Centos Linux OS but works great on ubuntu and other linux distributions aswell, just skip step 1 and other centos specific commands if you are on a different environment
 
 1. Install python3 on centos linux
 
 	yum install centos-release-scl
 	yum install rh-python36
 
-2. requirements.txt contains the python dependencies required for this project. They can be installed using the command 
+1. requirements.txt contains the python dependencies required for this project. They can be installed using the command 
 
+	```bash
 	sudo pip install -r requirements.txt
+	```
 
-3. Install uwsgi, server software for production, 
+1. Install uwsgi, server software for production, 
 
+	```bash
 	pip install uwsgi
+	```
 
-##### configuration.sh script contains server configurations, mainly port and Google maps API KEY
+configuration.sh script contains server configurations, mainly port and Google maps API KEY
 
-first enable python3 on centos linux
-
+* first enable python3 on centos linux
+	
+	```bash
 	scl enable rh-python36 bash
+	```
 
-Then you can use the following commands
+* Then the following commands will be available for use
 
-	start_server.bash script can be used to start the server
-	stop_server.bash script can be used to stop the server
+	Run `start_server.bash` script to start the server
+	Run `stop_server.bash` script to stop the server
 
